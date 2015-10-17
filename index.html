@@ -1,10 +1,15 @@
 <!doctype html>
 
-<html>
+<html lang="en-US" prefix="og: http://ogp.me/ns#">
 
 <head>
     <meta charset='utf-8'>
     <title>h.js - 2KB JavaScript Syntax Highlighter</title>
+    <meta property="og:title" content="h.js - 2KB JavaScript Syntax Highlighter" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://h.js.org/" />
+    <meta property="og:image" content="http://h.js.org/img/h.js.png" />
+    <meta property="og:description" content="Feature - Only 2.0KB (or 1.3KB if gzipepd) - Of cource, self contained - Written in ES2015 - Exact highlighting - Support ES2015 syntax - Support JSDoc tag highlighting - Support UMD" />
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -97,6 +102,21 @@ console<span class=p>.</span><span class=f>log</span><span class=p>(</span><span
     <footer>
         <small>(C) 2015 TSUYUSATO Kitsune</small>
     </footer>
+
+    <script>
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o), m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+        ga('create', 'UA-49200696-4', 'auto');
+        ga('send', 'pageview');
+    </script>
 </body>
 
 </html>
