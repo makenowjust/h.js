@@ -10,7 +10,7 @@ __2KB__ JavaScript Syntax Highlighter
 
 ## Feature
 
-  - Only 2.0KB (or 1.2KB if gzipepd)
+  - Only 2.0KB (or 1.3KB if gzipepd)
   - Of cource, self contained
   - Written in [ES2015][]
   - Exact highlighting (Did you see mis-highlighted regexp or else?)
