@@ -1,9 +1,11 @@
-# h.js
+# [h.js]
 
 __2KB__ JavaScript Syntax Highlighter
 
 [![Build Status](https://img.shields.io/travis/MakeNowJust/h.js.svg?style=flat-square)](https://travis-ci.org/MakeNowJust/h.js)
+[![License](https://img.shields.io/badge/license-mit-green.svg?style=flat-square)](https://makenowjust.mit-license.org/2015)
 
+[h.js]: https://github.com/MakeNowJust/h.js
 
 ## Feature
 
@@ -15,11 +17,14 @@ __2KB__ JavaScript Syntax Highlighter
   - Support [JSDoc][] tag highlighting
   - Support [UMD][] ([CommonJS][], [AMD][] and classic style loading)
 
+See [live demo]!
+
 [ES2015]: http://www.ecma-international.org/ecma-262/6.0/
 [JSDoc]: http://usejsdoc.org/
 [UMD]: https://github.com/umdjs/umd
 [CommonJS]: https://en.wikipedia.org/wiki/CommonJS
 [AMD]: https://github.com/amdjs/amdjs-api/blob/master/AMD.md
+[live demo]: https://makenowjust.github.com/h.js/demo.html
 
 
 ## Install
@@ -28,9 +33,9 @@ __2KB__ JavaScript Syntax Highlighter
 $ npm install --save h.js
 ```
 
-or download [h.js][] directly.
+or download [h.js][raw h.js] directly.
 
-[h.js]: https://raw.githubusercontent.com/MakeNowJust/h.js/master/h.js
+[raw h.js]: https://raw.githubusercontent.com/MakeNowJust/h.js/master/h.js
 
 
 ## Usage
@@ -56,12 +61,14 @@ Array.from(document.querySelectorAll('pre.h-js code')).forEach((code) => {
 
 ### h
 
-> `h(source)`
-
-Highlight JavaScript `source` code.
-
-```javascirpt
-h('1 + 2')
+```javascript
+/**
+ * Highlight JavaScript source code.
+ *
+ * @param {string} source - JavaScript source code.
+ * @return {string} - Highlighted source code.
+ */
+function h(source) {
 ```
 
 It returns HTML text which contains `<span>` element having such a class:
