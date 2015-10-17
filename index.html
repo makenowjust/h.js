@@ -45,7 +45,7 @@ Xe(W(mVleUs=T))SthR(sQlaPcXM\${Lt+=K&#60;span\\x20cQsUJ}&#60;/span&#62;H\\\\.|.)
         <p><strong>2KB</strong> JavaScript Syntax Highlighter</p>
         <h2>Feature</h2>
         <ul>
-            <li>Only 2.0KB (or 1.2KB if gzipepd)</li>
+            <li>Only 2.0KB (or 1.3KB if gzipepd)</li>
             <li>Of cource, self contained</li>
             <li>Written in <a href="http://www.ecma-international.org/ecma-262/6.0/">ES2015</a></li>
             <li>Exact highlighting (Did you see mis-highlighted regexp or else?)</li>
@@ -62,20 +62,20 @@ Xe(W(mVleUs=T))SthR(sQlaPcXM\${Lt+=K&#60;span\\x20cQsUJ}&#60;/span&#62;H\\\\.|.)
         <p>In Node.js, you can use <code>require</code>:</p>
         <pre><code class="h-js language-javascript"><span class=k>const</span> h <span class=o>=</span> <span class=f>require</span><span class=p>(</span><span class=s>&#39;h.js&#39;</span><span class=p>)</span>
 console<span class=p>.</span><span class=f>log</span><span class=p>(</span><span class=f>h</span><span class=p>(</span><span class=s>&#39;1 + 2&#39;</span><span class=p>)</span><span class=p>)</span>
-<span class=c>//=&#62; &#39;&#60;span class=v&#62;1&#60;/span&#62; &#60;span class=o&#62;+&#60;/span&#62; &#60;span class=v&#62;2&#60;/span&#62;&#39;)</span></code></pre>
+<span class=c>//=&#62; &#39;&#60;span class=v&#62;1&#60;/span&#62; &#60;span class=o&#62;+&#60;/span&#62; &#60;span class=v&#62;2&#60;/span&#62;&#39;</span></code></pre>
         <p>In Browser, you add <code>&lt;script&gt;</code> tag to load h.js and put this script into the tail of <code>&lt;body&gt;</code>:</p>
-        <pre><code class="h-js language-javascript">Array<span class=p>.</span><span class=f>from</span><span class=p>(</span>document<span class=p>.</span><span class=f>querySelectorAll</span><span class=p>(</span><span class=s>&#39;pre code.h-js&#39;</span><span class=p>)</span><span class=p>)</span><span class=p>.</span><span class=f>forEach</span><span class=p>(</span><span class=p>(</span>code<span class=p>)</span> <span class=p>=&#62;</span> <span class=p>{</span>
-  code<span class=p>.</span>innerHTML <span class=o>=</span> <span class=f>h</span><span class=p>(</span>code<span class=p>.</span>textContent<span class=p>)</span>
-<span class=p>}</span><span class=p>)</span></code></pre>
+        <pre><code class="h-js language-javascript">Array<span class=p>.</span><span class=f>from</span><span class=p>(</span>document<span class=p>.</span><span class=f>querySelectorAll</span><span class=p>(</span><span class=s>&#39;pre code.h-js&#39;</span><span class=p>)</span><span class=p>)</span>
+  <span class=p>.</span><span class=f>forEach</span><span class=p>(</span><span class=p>(</span>code<span class=p>)</span> <span class=p>=&#62;</span> <span class=p>{</span>
+    code<span class=p>.</span>innerHTML <span class=o>=</span> <span class=f>h</span><span class=p>(</span>code<span class=p>.</span>textContent<span class=p>)</span>
+  <span class=p>}</span><span class=p>)</span></code></pre>
         <h2>API</h2>
-        <h3>h</h3>
         <pre><code class="h-js language-javascript"><span class=c>/**
  * Highlight JavaScript source code.
  *
  * <span class=d>@param</span> {string} source - JavaScript source code.
  * <span class=d>@return</span> {string} - Highlighted source code.
  */</span>
-<span class=k>function</span> <span class=f>h</span><span class=p>(</span>source<span class=p>)</span> <span class=p>{</span></code></pre>
+<span class=k>function</span> <span class=f>h</span> <span class=p>(</span>source<span class=p>)</span> <span class=p>{</span></code></pre>
         <p>It returns HTML text which contains <code>&lt;span&gt;</code> element having such a class:</p>
         <ul>
             <li><code>&lt;span class=c&gt;...&lt;/span&gt;</code> means the comment.</li>
