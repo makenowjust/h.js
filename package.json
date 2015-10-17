@@ -1,29 +1,32 @@
 {
   "name": "h.js",
-  "version": "1.0.0",
   "description": "Only 2KB JavaScript Syntax Highlighter",
-  "main": "h.js",
-  "scripts": {
-    "test": "tape test/*.js"
+  "version": "1.0.0",
+  "author": "TSUYUSATO Kitsune <make.just.on@gmail.com>",
+  "bugs": {
+    "url": "https://github.com/makenowjust/h.js/issues"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/makenowjust/h.js.git"
+  "devDependencies": {
+    "tape": "^4.2.1"
   },
+  "engine": {
+    "node": ">=4"
+  },
+  "files": [
+    "h.js"
+  ],
+  "homepage": "https://github.com/makenowjust/h.js#readme",
   "keywords": [
     "highlight",
     "syntax"
   ],
-  "author": "TSUYUSATO Kitsune <make.just.on@gmail.com>",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/makenowjust/h.js/issues"
+  "main": "h.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/makenowjust/h.js.git"
   },
-  "homepage": "https://github.com/makenowjust/h.js#readme",
-  "devDependencies": {
-    "tape": "^4.2.1"
-  },
-  "files": [
-    "h.js"
-  ]
+  "scripts": {
+    "test": "tape test/*.js"
+  }
 }
