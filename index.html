@@ -53,7 +53,7 @@ Xe(W(mVleUs=T))SthR(sQlaPcXM\${Lt+=K&#60;span\\x20cQsUJ}&#60;/span&#62;H\\\\.|.)
             <li>Support <a href="http://usejsdoc.org/">JSDoc</a> tag highlighting</li>
             <li>Support <a href="https://github.com/umdjs/umd">UMD</a> (<a href="https://en.wikipedia.org/wiki/CommonJS">CommonJS</a>, <a href="https://github.com/amdjs/amdjs-api/blob/master/AMD.md">AMD</a> and classic style loading)</li>
         </ul>
-        <p>See <a href="https://makenowjust.github.com/h.js/demo.html">live demo</a>!</p>
+        <p>See <a href="http://h.js.org/demo.html">live demo</a>!</p>
         <h2>Install</h2>
         <pre><code class="language-console">$ npm install --save h.js
 </code></pre>
@@ -64,7 +64,7 @@ Xe(W(mVleUs=T))SthR(sQlaPcXM\${Lt+=K&#60;span\\x20cQsUJ}&#60;/span&#62;H\\\\.|.)
 console<span class=p>.</span><span class=f>log</span><span class=p>(</span><span class=f>h</span><span class=p>(</span><span class=s>&#39;1 + 2&#39;</span><span class=p>)</span><span class=p>)</span>
 <span class=c>//=&#62; &#39;&#60;span class=v&#62;1&#60;/span&#62; &#60;span class=o&#62;+&#60;/span&#62; &#60;span class=v&#62;2&#60;/span&#62;&#39;)</span></code></pre>
         <p>In Browser, you add <code>&lt;script&gt;</code> tag to load h.js and put this script into the tail of <code>&lt;body&gt;</code>:</p>
-        <pre><code class="h-js language-javascript">Array<span class=p>.</span><span class=f>from</span><span class=p>(</span>document<span class=p>.</span><span class=f>querySelectorAll</span><span class=p>(</span><span class=s>&#39;pre.h-js code&#39;</span><span class=p>)</span><span class=p>)</span><span class=p>.</span><span class=f>forEach</span><span class=p>(</span><span class=p>(</span>code<span class=p>)</span> <span class=p>=&#62;</span> <span class=p>{</span>
+        <pre><code class="h-js language-javascript">Array<span class=p>.</span><span class=f>from</span><span class=p>(</span>document<span class=p>.</span><span class=f>querySelectorAll</span><span class=p>(</span><span class=s>&#39;pre code.h-js&#39;</span><span class=p>)</span><span class=p>)</span><span class=p>.</span><span class=f>forEach</span><span class=p>(</span><span class=p>(</span>code<span class=p>)</span> <span class=p>=&#62;</span> <span class=p>{</span>
   code<span class=p>.</span>innerHTML <span class=o>=</span> <span class=f>h</span><span class=p>(</span>code<span class=p>.</span>textContent<span class=p>)</span>
 <span class=p>}</span><span class=p>)</span></code></pre>
         <h2>API</h2>
