@@ -24,7 +24,7 @@ See [live demo]!
 [UMD]: https://github.com/umdjs/umd
 [CommonJS]: https://en.wikipedia.org/wiki/CommonJS
 [AMD]: https://github.com/amdjs/amdjs-api/blob/master/AMD.md
-[live demo]: https://makenowjust.github.com/h.js/demo.html
+[live demo]: http://h.js.org/demo.html
 
 
 ## Install
@@ -51,7 +51,7 @@ console.log(h('1 + 2'))
 In Browser, you add `<script>` tag to load h.js and put this script into the tail of `<body>`:
 
 ```javascript
-Array.from(document.querySelectorAll('pre.h-js code')).forEach((code) => {
+Array.from(document.querySelectorAll('pre code.h-js')).forEach((code) => {
   code.innerHTML = h(code.textContent)
 })
 ```
