@@ -1,0 +1,16 @@
+{
+  "private": true,
+  "devDependencies": {
+    "gh-pages": "^0.4.0",
+    "js-beautify": "^1.5.10",
+    "mdast": "^2.1.0",
+    "mdast-html": "^1.2.1",
+    "mdast-squeeze-paragraphs": "^1.1.0",
+    "mdast-strip-badges": "^1.0.0",
+    "mustache": "^2.2.0",
+    "unist-util-visit": "^1.0.0"
+  },
+  "scripts": {
+    "deploy": "node build.js && gh-pages --dist build/"
+  }
+}

@@ -1,0 +1,57 @@
+<!doctype html>
+
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <title>h.js demo</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+      main textarea {
+        display: block;
+        margin: auto;
+        padding: 0.5em;
+        width: 600px;
+        height: 10em;
+      }
+
+      main pre {
+        width: 600px;
+        height: 10em;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1><a href="https://github.com/MakeNowJust/h.js">h.js</a> demo</h1>
+    </header>
+    <main>
+      <h2>Input:</h2>
+      <textarea>/**
+ * Highlight JavaScript source code.
+ *
+ * @param {string} source - JavaScript source code.
+ * @return {string} - Highlighted source code.
+ */
+function h(source) {</textarea>
+      <h2>Output:</h2>
+      <pre><code class="h-js"></code></pre>
+    </main>
+    <footer>
+      <small>(C) 2015 TSUYUSATO Kitsune</small>
+    </footer>
+
+    <script src="js/h.js"></script>
+    <script>
+      (()=>{
+        const textarea = document.querySelector('main textarea')
+        const code = document.querySelector('main code')
+        const updateHighlight = () => {
+          code.innerHTML = h(textarea.value)
+        }
+
+        textarea.addEventListener('input', updateHighlight)
+        updateHighlight()
+      })()
+    </script>
+  </body>
+</html>
