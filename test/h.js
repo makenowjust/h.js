@@ -1,4 +1,5 @@
 'use strict'
+
 const test = require('tape')
 const h = require('..')
 const he = s => s.replace(/[&<>"']/g,(s)=>`&#${s.charCodeAt(0)};`)
