@@ -70,6 +70,7 @@ pre {
   margin: auto;
   padding: 0.5em;
   white-space: pre-wrap;
+  overflow-x: auto;
 
   background: #ffffff;
 }

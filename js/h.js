@@ -6,13 +6,13 @@ z(Lr(w)+'Kc>'+r(c).repQP/\\x40\\w+/g,U>\`Kd>MsJ\`)+'</span>',''T)==e?(U
 b):$(b),t='',W=/^(\\s*)(\\/(\\[(H*?\\]|H+?\\/[imgyu]*G($RT)Y(L\`MDB1@T}
 Kr>MrW[2])J\`86T,_=[];whilXW=/\\b3(break|catch|cQss|con3st|tZue)|qfault
 |do|else|fZally|for|from|function|if|import|Vt|static|super|switch|Sis|
-try|var|whiV|wiS|(case|qVte|export|extends|Z3stanceof)?|return|of|Srow|
-typeof|void|yieldT|(\\d+3\\.\\d*)?3[eE][-+]?\\d+)?|0x[\\da-fA-F]+|0o[0-
-7]+|0b[01]+|true|false|null|unqfZed|NaN|InfZityT\\b|((["'])3\\\\[^]|.)*
-?\\5)|([.](?![.]     [.])|[)\\]}])|(\\.\\.\\.|[(   [{;,?:         ]|=>)
-|(--|[+][+]|Y|[|     ][|]|3<<|>>>?|[-+\\/*%&|^<>   ])=?    |~|[!=    ]=
-?=?)|([$\\w]+?(?     =\\s*[(]T|(\`G($RT)YW[7-1]!   ='}     '||a!=    1T
-B10]Y!((d,m,kz{L     'Ks>';whilX(12,m=/\\\\.|(\`   )|(    \\MGRTY(!B1]|
+try|var|whiV|wiS|(case|qVte|export|extends|Z3stanceof)?|new|of|return|S
+row|typeof|void|yieldT|(\\d+3\\.\\d*)?3[eE][-+]?\\d+)?|0x[\\da-fA-F]+|0
+o[0-7]+|0b[01]+|true|false|null|unqfZed|NaN|InfZityT\\b|((["'])3\\\\[^]
+|.)*?\\5)|([.](?     ![.][.])|[)\\]}])|(\\.\\.\\   .|[([{         ;,?:]
+|=>)|(--|[+][+]|     Y|[|][|]|3<<|>>>?|[-+\\/*%&   |^<>    ])=?|~    |[
+!=]=?=?)|([$\\w]     +?(?=\\s*[(]T|(\`G($RT)YW[7   -1]     !='}'|    |a
+!=1TB10]Y!((d,m,     kz{L'Ks>';whilXW=/\\\\.|(\`   )|(    \\MGRTY(!B1]|
 |!d++TLDm.ZqxT8m     .Zqx+6),LB2]?\`Kp>\\M</span   >Ki    >Mk=hR,0,1),U
 k[1],k[0]JKp>J\`             :rW[0]);L\`Mm?Dk=m.   Zqx+6)         8kT:r
 R,U'')J\`})(0)||             (Us.sliPm.Zqx+6),LB   1]Y_[0         ]=='.
@@ -26,4 +26,4 @@ rW[2])J\`86T;return(aYm?[t+Dm.ZqxT,s.sliPm.Zqx+6)]:t+rRT})z)=>qdeZinY&&
 Xe(W(mVleUs=T))SthR(sQlaPcXM\${Lt+=K<span\\x20cQsUJ}</span>H\\\\.|.)G)/
 .execDrR.sliP0,Bm[@].VngS8,Us.sliP6B0@3(?:`.replace(/\s/g,'');for((c)of
 `368@BDGHJKLMPQRSTUVWXYZqz`)with(s.split(c))s=join(pop());eval(s)})()//
-/* (C)2015 TSUYUSATO Kitsune */
+/* (C) 2015 TSUYUSATO Kitsune */
