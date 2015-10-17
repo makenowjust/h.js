@@ -46,21 +46,20 @@ In Node.js, you can use `require`:
 ```javascript
 const h = require('h.js')
 console.log(h('1 + 2'))
-//=> '<span class=v>1</span> <span class=o>+</span> <span class=v>2</span>')
+//=> '<span class=v>1</span> <span class=o>+</span> <span class=v>2</span>'
 ```
 
 In Browser, you add `<script>` tag to load h.js and put this script into the tail of `<body>`:
 
 ```javascript
-Array.from(document.querySelectorAll('pre code.h-js')).forEach((code) => {
-  code.innerHTML = h(code.textContent)
-})
+Array.from(document.querySelectorAll('pre code.h-js'))
+  .forEach((code) => {
+    code.innerHTML = h(code.textContent)
+  })
 ```
 
 
 ## API
-
-### h
 
 ```javascript
 /**
@@ -69,7 +68,7 @@ Array.from(document.querySelectorAll('pre code.h-js')).forEach((code) => {
  * @param {string} source - JavaScript source code.
  * @return {string} - Highlighted source code.
  */
-function h(source) {
+function h (source) {
 ```
 
 It returns HTML text which contains `<span>` element having such a class:
