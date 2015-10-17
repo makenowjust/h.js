@@ -33,7 +33,7 @@ test('document comment', t => {
 })
 
 test('keyword', t => {
-  'break catch class const continue default do else finally function for from if import let static super switch this try var while with case delete export extends in instanceof of return throw typeof void yield'.split(' ').forEach(testCase => {
+  'break catch class const continue default do else finally function for from if import let static super switch this try var while with case delete export extends in instanceof of new return throw typeof void yield'.split(' ').forEach(testCase => {
     t.equal(h(testCase), `<span class=k>${he(testCase)}</span>`)
     t.equal(h(`.${testCase}`), `<span class=p>.</span>${he(testCase)}`)
     t.equal(h(`.${testCase}(`), `<span class=p>.</span><span class=f>${he(testCase)}</span><span class=p>(</span>`)
@@ -116,7 +116,7 @@ test('regexp', t => {
   ].forEach(testCase => {
     t.equal(h(testCase), `<span class=r>${he(testCase)}</span>`)
 
-    'case delete export extends in instanceof of return throw typeof void yield'.split(' ').forEach(prefix => {
+    'case delete export extends in instanceof of new return throw typeof void yield'.split(' ').forEach(prefix => {
       t.equal(h(`${prefix} ${testCase}`), `<span class=k>${he(prefix)}</span> <span class=r>${he(testCase)}</span>`)
     })
 
