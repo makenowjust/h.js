@@ -3,7 +3,8 @@
 __2KB__ JavaScript Syntax Highlighter
 
 [![Build Status](https://img.shields.io/travis/MakeNowJust/h.js.svg?style=flat-square)](https://travis-ci.org/MakeNowJust/h.js)
-[![License](https://img.shields.io/badge/license-mit-green.svg?style=flat-square)](https://makenowjust.mit-license.org/2015)
+[![Version](https://img.shields.io/npm/v/h.js.svg?style=flat-square)](https://www.npmjs.com/package/h.js)
+[![License](https://img.shields.io/npm/l/h.js.svg?style=flat-square)](https://makenowjust.mit-license.org/2015)
 
 [h.js]: https://github.com/MakeNowJust/h.js
 
@@ -17,7 +18,7 @@ __2KB__ JavaScript Syntax Highlighter
   - Support [JSDoc][] tag highlighting
   - Support [UMD][] ([CommonJS][], [AMD][] and classic style loading)
 
-See [live demo]!
+See [live demo][]!
 
 [ES2015]: http://www.ecma-international.org/ecma-262/6.0/
 [JSDoc]: http://usejsdoc.org/
