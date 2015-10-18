@@ -37,6 +37,7 @@ test('keyword', t => {
     t.equal(h(testCase), `<span class=k>${he(testCase)}</span>`)
     t.equal(h(`.${testCase}`), `<span class=p>.</span>${he(testCase)}`)
     t.equal(h(`.${testCase}(`), `<span class=p>.</span><span class=f>${he(testCase)}</span><span class=p>(</span>`)
+    t.equal(h(`.foo\n${testCase}`), `<span class=p>.</span>foo\n<span class=k>${he(testCase)}</span>`)
     if (testCase !== 'default') {
       t.equal(h(`${testCase} :`), `${he(testCase)} <span class=p>:</span>`)
     }
