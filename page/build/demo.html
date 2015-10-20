@@ -26,7 +26,7 @@
     </header>
     <main>
       <h2>Input:</h2>
-      <textarea>/**
+      <textarea id="input">/**
  * Highlight JavaScript source code.
  *
  * @param {string} source - JavaScript source code.
@@ -34,7 +34,7 @@
  */
 function h(source) {</textarea>
       <h2>Output:</h2>
-      <pre><code class="h-js"></code></pre>
+      <pre><code class="h-js" id="output"></code></pre>
     </main>
     <footer>
       <small>(C) 2015 TSUYUSATO Kitsune</small>
@@ -42,14 +42,14 @@ function h(source) {</textarea>
 
     <script src="js/h.js"></script>
     <script>
-      (()=>{
-        const textarea = document.querySelector('main textarea')
-        const code = document.querySelector('main code')
-        const updateHighlight = () => {
-          code.innerHTML = h(textarea.value)
+      (function () {
+        var input = document.getElementById('input')
+        var output = document.getElementById('output')
+        var updateHighlight = function () {
+          output.innerHTML = h(input.value)
         }
 
-        textarea.addEventListener('input', updateHighlight)
+        input.addEventListener('input', updateHighlight)
         updateHighlight()
       })()
     </script>
