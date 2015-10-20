@@ -12,7 +12,6 @@ __2KB__ JavaScript Syntax Highlighter
 
   - Only 2.0KB (or 1.3KB if gzipepd)
   - Of cource, self contained
-  - Written in [ES2015][]
   - Exact highlighting (Did you see mis-highlighted regexp or else?)
   - Support [ES2015][] syntax (template string, octal/binary number and some keywords...)
   - Support [JSDoc][] tag highlighting
