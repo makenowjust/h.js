@@ -7,11 +7,9 @@
     "url": "https://github.com/makenowjust/h.js/issues"
   },
   "devDependencies": {
+    "babel": "^5.8.23",
     "tap-min": "^1.0.0",
     "tape": "^4.2.1"
-  },
-  "engine": {
-    "node": ">=4"
   },
   "files": [
     "h.js"
@@ -28,7 +26,6 @@
     "url": "git+https://github.com/makenowjust/h.js.git"
   },
   "scripts": {
-    "test": "tape test/*.js | tap-min"
-  },
-  "dependencies": {}
+    "test": "babel test/h.js > test/h.es5.js && node test/h.es5.js | tap-min"
+  }
 }
