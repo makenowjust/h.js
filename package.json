@@ -7,9 +7,9 @@
     "url": "https://github.com/makenowjust/h.js/issues"
   },
   "devDependencies": {
-    "babel": "^5.8.23",
+    "babel": "^5.8.29",
     "tap-min": "^1.0.0",
-    "tape": "^4.2.1"
+    "tape": "^4.2.2"
   },
   "files": [
     "h.js"
