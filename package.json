@@ -1,7 +1,7 @@
 {
   "name": "h.js",
   "description": "Only 2KB JavaScript Syntax Highlighter",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "author": "TSUYUSATO Kitsune <make.just.on@gmail.com>",
   "bugs": {
     "url": "https://github.com/makenowjust/h.js/issues"
