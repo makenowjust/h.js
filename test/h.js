@@ -19,6 +19,8 @@ test('comment', t => {
       * are
       * Comments
       */`,
+     `/*`,
+     `/* *`,
   ].forEach(source => {
     highlight(t, source, `<span class=c>${he(source)}</span>`)
   })
@@ -26,9 +28,6 @@ test('comment', t => {
   ;[
     [`.foo //`, `<span class=p>.</span>foo <span class=c>//</span>`],
     [`.foo /* */`, `<span class=p>.</span>foo <span class=c>/* */</span>`],
-
-    [`/*`, `<span class=o>/</span><span class=o>*</span>`],
-    [`/* *`, `<span class=o>/</span><span class=o>*</span> <span class=o>*</span>`],
   ].forEach(testCase => {
     highlight(t, testCase[0], testCase[1])
   })
@@ -58,6 +57,7 @@ test('keyword', t => {
       highlight(t, `foo${keyword}bar`, `foo${he(keyword)}bar`)
       highlight(t, `.${keyword}(`, `<span class=p>.</span><span class=f>${he(keyword)}</span><span class=p>(</span>`)
       highlight(t, `.foo\n${keyword}`, `<span class=p>.</span>foo\n<span class=k>${he(keyword)}</span>`)
+      highlight(t, `.${keyword} / foo / bar`, `<span class=p>.</span>${he(keyword)} <span class=o>/</span> foo <span class=o>/</span> bar`)
       if (keyword !== 'default') {
         highlight(t, `${keyword} :`, `${he(keyword)} <span class=p>:</span>`)
         highlight(t, `.foo\n${keyword} :`, `<span class=p>.</span>foo\n${he(keyword)} <span class=p>:</span>`)
@@ -115,8 +115,20 @@ test('string', t => {
     `"string"`,
     `'\\''`,
     `"\\""`,
+    `'hello\\\nworld'`,
+    `'hello`,
+    `"hello\\\nworld"`,
+    `"hello`,
   ].forEach(source => {
     highlight(t, source, `<span class=s>${he(source)}</span>`)
+  })
+
+
+  ;[
+    [`'hello\nworld`, `<span class=s>'hello</span>\nworld`],
+    [`"hello\nworld`, `<span class=s>"hello</span>\nworld`],
+  ].forEach(testCase => {
+    highlight(t, testCase[0], testCase[1])
   })
 
   t.end()
@@ -128,6 +140,8 @@ test('template literal', t => {
     '`template literal`',
     '`\\``',
     '`\\${`',
+    '`\n`',
+    '`hello\\\nworld`',
   ].forEach(source => {
     highlight(t, source, `<span class=s>${he(source)}</span>`)
   })
@@ -153,7 +167,9 @@ test('template literal', t => {
 })
 
 test('regexp', t => {
-  [
+  let eh = s => h(`a ${s}`).slice(2)
+
+  ;[
     '/regexp/',
     '/regexp/imguy',
     '/regular expression/',
@@ -175,12 +191,19 @@ test('regexp', t => {
     })
   })
 
+  ;[
+    ['/a\\\nb/', '<span class=r>/a\\</span>\nb<span class=o>/</span>'],
+    ['/a[\n]b/', '<span class=r>/a[</span>\n<span class=p>]</span>b<span class=o>/</span>'],
+  ].forEach(testCase => {
+    highlight(t, testCase[0], testCase[1])
+  })
+
   t.end()
 })
 
 test('operator', t => {
   '+ - * / % = ~ ^ & | && || > < << >> >>> ! += -= *= /= %= == === != !== ^= &= |= >= <= <<= >>= >>>='.split(' ').forEach(source => {
-    highlight(t, source, `<span class=o>${he(source)}</span>`)
+    highlight(t, `foo ${source}`, `foo <span class=o>${he(source)}</span>`)
   })
 
   t.end()
@@ -199,6 +222,9 @@ test('function name', t => {
     ['f(', '<span class=f>f</span><span class=p>(</span>'],
     ['f (', '<span class=f>f</span> <span class=p>(</span>'],
     ['f\n(', '<span class=f>f</span>\n<span class=p>(</span>'],
+    ['f`', '<span class=f>f</span><span class=s>`</span>'],
+    ['f `', '<span class=f>f</span> <span class=s>`</span>'],
+    ['f\n`', '<span class=f>f</span>\n<span class=s>`</span>'],
   ].forEach(testCase => {
     highlight(t, testCase[0], testCase[1])
   })
