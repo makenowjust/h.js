@@ -21,6 +21,16 @@ header, main, footer {
   margin: 1em 0;
 }
 
+header {
+  text-align: center;
+}
+
+header > pre {
+  display: inline-block;
+  width: auto;
+  text-align: left;
+}
+
 footer {
   text-align: center;
 }
