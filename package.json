@@ -1,7 +1,7 @@
 {
   "name": "h.js",
   "description": "Only 2KB JavaScript Syntax Highlighter",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "author": "TSUYUSATO Kitsune <make.just.on@gmail.com>",
   "babel": {
     "presets": [
