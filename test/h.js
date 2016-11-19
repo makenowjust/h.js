@@ -194,7 +194,7 @@ test('regexp', t => {
       highlight(t, `${keyword} ${regexp}`, `<span class=k>${he(keyword)}</span> <span class=r>${he(regexp)}</span>`)
     })
 
-    w`+ - * / % = ~ ^ & | && || > < << >> >>> ! += -= *= /= %= == === != !== ^= &= |= >= <= <<= >>= >>>=`.forEach(operator => {
+    w`+ - * ** / % = ~ ^ & | && || > < << >> >>> ! += -= *= **= /= %= == === != !== ^= &= |= >= <= <<= >>= >>>=`.forEach(operator => {
       highlight(t, `x ${operator} ${regexp}`, `x <span class=o>${he(operator)}</span> <span class=r>${he(regexp)}</span>`)
     })
 
@@ -214,7 +214,7 @@ test('regexp', t => {
 })
 
 test('operator', t => {
-  w`+ - * / % = ~ ^ & | && || > < << >> >>> ! += -= *= /= %= == === != !== ^= &= |= >= <= <<= >>= >>>=`.forEach(source => {
+  w`+ - * ** / % = ~ ^ & | && || > < << >> >>> ! += -= *= **= /= %= == === != !== ^= &= |= >= <= <<= >>= >>>=`.forEach(source => {
     highlight(t, `foo ${source}`, `foo <span class=o>${he(source)}</span>`)
   })
 
