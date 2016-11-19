@@ -90,4 +90,4 @@ You can define styles of those classes in your CSS.
 
 ## License
 
-MIT License <http://makenowjust.mit-license.org/2015>
+MIT License <https://makenowjust.mit-license.org/2015-2016>
