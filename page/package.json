@@ -1,13 +1,13 @@
 {
   "private": true,
   "devDependencies": {
-    "gh-pages": "^0.4.0",
+    "gh-pages": "^0.12.0",
     "js-beautify": "^1.5.10",
-    "mdast": "^2.1.0",
-    "mdast-html": "^1.2.1",
-    "mdast-squeeze-paragraphs": "^1.1.0",
-    "mdast-strip-badges": "^1.0.0",
     "mustache": "^2.2.0",
+    "remark": "^6.2.0",
+    "remark-html": "^5.0.1",
+    "remark-squeeze-paragraphs": "^3.0.0",
+    "remark-strip-badges": "^3.0.2",
     "unist-util-visit": "^1.0.0"
   },
   "scripts": {
