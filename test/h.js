@@ -48,7 +48,7 @@ test('document comment', t => {
 })
 
 test('keyword', t => {
-  w`break catch class const continue default do else finally function for from if import let static super switch this try var while with case delete export extends in instanceof of new return throw typeof void yield`
+  w`break catch class const continue default do else finally function for from if import let static super switch this try var while with await case delete export extends in instanceof of new return throw typeof void yield`
     .forEach(keyword => {
       highlight(t, keyword, `<span class=k>${he(keyword)}</span>`)
       highlight(t, `.${keyword}`, `<span class=p>.</span>${he(keyword)}`)
@@ -63,6 +63,17 @@ test('keyword', t => {
         highlight(t, `.foo\n${keyword} :`, `<span class=p>.</span>foo\n${he(keyword)} <span class=p>:</span>`)
       }
     })
+
+  ;[
+    ['async function', '<span class=k>async</span> <span class=k>function</span>'],
+    ['asyncfunction', 'asyncfunction'],
+    ['async () =>', '<span class=k>async</span> <span class=p>(</span><span class=p>)</span> <span class=p>=></span>'],
+    ['async (', '<span class=f>async</span> <span class=p>(</span>'],
+    ['async a =>', '<span class=k>async</span> a <span class=p>=></span>'],
+    ['async a', 'async a'],
+  ].forEach(([testCase, expected]) => {
+    highlight(t, testCase, expected)
+  })
 
   t.end()
 })
@@ -179,7 +190,7 @@ test('regexp', t => {
   ].forEach(regexp => {
     highlight(t, regexp, `<span class=r>${he(regexp)}</span>`)
 
-    w`case delete export extends in instanceof of new return throw typeof void yield`.forEach(keyword => {
+    w`await case delete export extends in instanceof of new return throw typeof void yield`.forEach(keyword => {
       highlight(t, `${keyword} ${regexp}`, `<span class=k>${he(keyword)}</span> <span class=r>${he(regexp)}</span>`)
     })
 
