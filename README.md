@@ -12,16 +12,18 @@ __2KB__ JavaScript Syntax Highlighter
 
 ## Feature
 
-  - Only 2.0KB (or 1.3KB if gzipepd)
+  - Only 2.0KB (or 1.4KB if gzipepd)
   - Of cource, self contained
   - Exact highlighting (Did you see mis-highlighted regexp or else?)
   - Support [ES2015][] syntax (template string, octal/binary number and some keywords...)
+  - Support [ES2016][] and ES2017 syntax (exponentiation operator and async/await)
   - Support [JSDoc][] tag highlighting
   - Support [UMD][] ([CommonJS][], [AMD][] and classic style loading)
 
 See [live demo][]!
 
 [ES2015]: http://www.ecma-international.org/ecma-262/6.0/
+[ES2016]: http://www.ecma-international.org/ecma-262/7.0/
 [JSDoc]: http://usejsdoc.org/
 [UMD]: https://github.com/umdjs/umd
 [CommonJS]: https://en.wikipedia.org/wiki/CommonJS
