@@ -77,7 +77,7 @@ function h (source) {
 It returns HTML text which contains `<span>` element having such a class:
 
   - `<span class=c>...</span>` means the comment.
-  - `<span class=d>...</span>` means the JSDoc tag (it appearss in comment.)
+  - `<span class=d>...</span>` means the JSDoc tag (it appears in comment.)
   - `<span class=k>...</span>` means the keyword.
   - `<span class=v>...</span>` means the value (number, boolean and some constants.)
   - `<span class=s>...</span>` means the string (includes template string.)
