@@ -12,11 +12,11 @@ const fs = require('fs')
 const mustache = require('mustache')
 const beautify = require('js-beautify')
 // Markdown
-const mdast = require('mdast')
-const html = require('mdast-html')
-const highlight = require('./mdast-h.js')
-const stripBadges = require('mdast-strip-badges')
-const squeezeParagraphs = require('mdast-squeeze-paragraphs')
+const remark = require('remark')
+const html = require('remark-html')
+const highlight = require('./remark-h.js')
+const stripBadges = require('remark-strip-badges')
+const squeezeParagraphs = require('remark-squeeze-paragraphs')
 
 /*
  * Constants
@@ -31,7 +31,7 @@ const PROJECT_DIR = '..'
 
 // convert from markdown to html
 function markdown(markdown) {
-  return mdast()
+  return remark()
     .use([stripBadges, squeezeParagraphs, highlight, html])
     .process(markdown)
 }
