@@ -29,8 +29,8 @@ test('comment', t => {
   ;[
     [`.foo //`, `<span class=p>.</span>foo <span class=c>//</span>`],
     [`.foo /* */`, `<span class=p>.</span>foo <span class=c>/* */</span>`],
-  ].forEach(testCase => {
-    highlight(t, testCase[0], testCase[1])
+  ].forEach(([source, expected]) => {
+    highlight(t, source, expected)
   })
 
   t.end()
@@ -40,8 +40,8 @@ test('document comment', t => {
   [
     ['// @test', '<span class=c>// <span class=d>@test</span></span>'],
     ['/* @test */', '<span class=c>/* <span class=d>@test</span> */</span>'],
-  ].forEach(testCase => {
-    highlight(t, testCase[0], testCase[1])
+  ].forEach(([source, expected]) => {
+    highlight(t, source, expected)
   })
 
   t.end()
@@ -71,8 +71,8 @@ test('keyword', t => {
     ['async (', '<span class=f>async</span> <span class=p>(</span>'],
     ['async a =>', '<span class=k>async</span> a <span class=p>=></span>'],
     ['async a', 'async a'],
-  ].forEach(([testCase, expected]) => {
-    highlight(t, testCase, expected)
+  ].forEach(([source, expected]) => {
+    highlight(t, source, expected)
   })
 
   t.end()
@@ -90,8 +90,8 @@ test('number', t => {
     ['42..foo', '<span class=v>42.</span><span class=p>.</span>foo'],
     ['.42.foo', '<span class=v>.42</span><span class=p>.</span>foo'],
     ['3.14.foo', '<span class=v>3.14</span><span class=p>.</span>foo'],
-  ].forEach(testCase => {
-    highlight(t, testCase[0], testCase[1])
+  ].forEach(([source, expected]) => {
+    highlight(t, source, expected)
   })
 
   t.end()
@@ -139,8 +139,8 @@ test('string', t => {
   ;[
     [`'hello\nworld`, `<span class=s>'hello</span>\nworld`],
     [`"hello\nworld`, `<span class=s>"hello</span>\nworld`],
-  ].forEach(testCase => {
-    highlight(t, testCase[0], testCase[1])
+  ].forEach(([source, expected]) => {
+    highlight(t, source, expected)
   })
 
   t.end()
@@ -171,8 +171,8 @@ test('template literal', t => {
     ['`${1', '<span class=s>`<span class=p>${</span><span class=i><span class=v>1</span></span></span>'],
     ['`${}', '<span class=s>`<span class=p>${</span><span class=i></span><span class=p>}</span></span>'],
     ['`${}s', '<span class=s>`<span class=p>${</span><span class=i></span><span class=p>}</span>s</span>'],
-  ].forEach(testCase => {
-    highlight(t, testCase[0], testCase[1])
+  ].forEach(([source, expected]) => {
+    highlight(t, source, expected)
   })
 
   t.end()
@@ -206,8 +206,8 @@ test('regexp', t => {
   ;[
     ['/a\\\nb/', '<span class=r>/a\\</span>\nb<span class=o>/</span>'],
     ['/a[\n]b/', '<span class=r>/a[</span>\n<span class=p>]</span>b<span class=o>/</span>'],
-  ].forEach(testCase => {
-    highlight(t, testCase[0], testCase[1])
+  ].forEach(([source, expected]) => {
+    highlight(t, source, expected)
   })
 
   t.end()
@@ -237,8 +237,8 @@ test('function name', t => {
     ['f`', '<span class=f>f</span><span class=s>`</span>'],
     ['f `', '<span class=f>f</span> <span class=s>`</span>'],
     ['f\n`', '<span class=f>f</span>\n<span class=s>`</span>'],
-  ].forEach(testCase => {
-    highlight(t, testCase[0], testCase[1])
+  ].forEach(([source, expected]) => {
+    highlight(t, source, expected)
   })
 
   t.end()
@@ -284,8 +284,8 @@ for (i = 1; i <= 100; i++) {
   <span class=p>}</span>
 <span class=p>}</span>`],
     [`"/'/".replace(/[/]\\/'/gimuy,'')`, `<span class=s>"/'/"</span><span class=p>.</span><span class=f>replace</span><span class=p>(</span><span class=r>/[/]\\/'/gimuy</span><span class=p>,</span><span class=s>''</span><span class=p>)</span>`],
-  ].forEach(testCase => {
-    highlight(t, testCase[0], testCase[1])
+  ].forEach(([source, expected]) => {
+    highlight(t, source, expected)
   })
 
   t.end()
