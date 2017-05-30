@@ -26,4 +26,4 @@ R})})zfunctionq)     {Ztyp   eof   Ydef           ineW='V         &&U(m
 TleSs=R))QreturnP.replace(/M+'L(\KM<span@8SJ>'H'<span@8GM</spanD(?@\x20
 9D:8clas6])5U[4s.slice"0].Tngth*/})[1].replace(/\s/g,'');for((c)in(p))s
 =(c=s.split(p[c])).join(c.pop());eval(s)})('"45689@DGHJKLMPQRSTUVWYZqz'
-)// (C) 2016 TSUYUSATO Kitsune
+)// (C) 2017 TSUYUSATO Kitsune
