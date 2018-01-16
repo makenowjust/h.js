@@ -1,6 +1,7 @@
 const h = require(".");
 
 module.exports = {
+  mode: 'spa',
   build: {
     postcss: {
       plugins: {
