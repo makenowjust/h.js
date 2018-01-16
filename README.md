@@ -1,5 +1,7 @@
 # [h.js]
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/MakeNowJust/h.js.svg)](https://greenkeeper.io/)
+
 __2KB__ JavaScript Syntax Highlighter
 
 [![Build Status](https://img.shields.io/travis/MakeNowJust/h.js.svg?style=flat-square)](https://travis-ci.org/MakeNowJust/h.js)
