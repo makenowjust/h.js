@@ -4,3 +4,16 @@ node_js:
   - '8'
   - '7'
   - '6'
+
+before_deploy:
+  - yarn nuxt generate
+deploy:
+  provider: pages
+  skip-cleanup: true
+  github-token: $GITHUB_TOKEN
+  keep_history: true
+  local-dir: dist
+  name: TSUYUSATO Kitsune
+  email: make.just.on+ci@gmail.com
+  on:
+    branch: master
