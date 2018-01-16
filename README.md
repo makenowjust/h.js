@@ -6,7 +6,7 @@ __2KB__ JavaScript Syntax Highlighter
 [![Dependencies](https://img.shields.io/david/MakeNowJust/h.js.svg?style=flat-square)](https://david-dm.org/MakeNowJust/h.js#info=dependencies)
 [![DevDependencies](https://img.shields.io/david/dev/MakeNowJust/h.js.svg?style=flat-square)](https://david-dm.org/MakeNowJust/h.js#info=devDependencies)
 [![Version](https://img.shields.io/npm/v/h.js.svg?style=flat-square)](https://www.npmjs.com/package/h.js)
-[![License](https://img.shields.io/npm/l/h.js.svg?style=flat-square)](https://makenowjust.mit-license.org/2015)
+[![License](https://img.shields.io/npm/l/h.js.svg?style=flat-square)](https://makenowjust.mit-license.org/2015-2018)
 
 [h.js]: https://github.com/MakeNowJust/h.js
 
@@ -74,21 +74,21 @@ Array.from(document.querySelectorAll('pre code.h-js'))
  * @param {string} source - JavaScript source code.
  * @return {string} - Highlighted source code.
  */
-function h (source) {
+export default (source) => {
 ```
 
 It returns HTML text which contains `<span>` element having such a class:
 
-  - `<span class=c>...</span>` means the comment.
-  - `<span class=d>...</span>` means the JSDoc tag (it appears in comment.)
-  - `<span class=k>...</span>` means the keyword.
-  - `<span class=v>...</span>` means the value (number, boolean and some constants.)
-  - `<span class=s>...</span>` means the string (includes template string.)
-  - `<span class=i>...</span>` means the interpolation (it appears in template string.)
-  - `<span class=r>...</span>` means the regexp.
-  - `<span class=o>...</span>` means the operator.
-  - `<span class=p>...</span>` means the punctual symbol.
-  - `<span class=f>...</span>` means the function name.
+  - `<span class=c>...</span>` means a comment.
+  - `<span class=d>...</span>` means a JSDoc tag (it appears in comment.)
+  - `<span class=k>...</span>` means a keyword.
+  - `<span class=v>...</span>` means a value (number, boolean and some constants.)
+  - `<span class=s>...</span>` means a string (includes template string.)
+  - `<span class=i>...</span>` means an interpolation (it appears only in template string.)
+  - `<span class=r>...</span>` means a regexp.
+  - `<span class=o>...</span>` means an operator.
+  - `<span class=p>...</span>` means a punctual symbol.
+  - `<span class=f>...</span>` means a function name.
 
 You can define styles of those classes in your CSS.
 
