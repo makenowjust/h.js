@@ -1,6 +1,6 @@
-# [h.js]
+# h.js
 
-**2KB** JavaScript Syntax Highlighter
+> **2KB** JavaScript Syntax Highlighter
 
 [![Build Status](https://img.shields.io/travis/MakeNowJust/h.js.svg?style=flat-square)](https://travis-ci.org/MakeNowJust/h.js)
 [![Dependencies](https://img.shields.io/david/MakeNowJust/h.js.svg?style=flat-square)](https://david-dm.org/MakeNowJust/h.js#info=dependencies)
@@ -8,57 +8,45 @@
 [![Version](https://img.shields.io/npm/v/h.js.svg?style=flat-square)](https://www.npmjs.com/package/h.js)
 [![License](https://img.shields.io/npm/l/h.js.svg?style=flat-square)](https://makenowjust.mit-license.org/2015-2018)
 
-[h.js]: https://github.com/MakeNowJust/h.js
+## Features
 
-## Feature
-
-* Only 2.0KB (or 1.4KB if gzipepd)
-* Of cource, self contained
-* Exact highlighting (Did you see mis-highlighted regexp or else?)
-* Support [ES2015][] syntax (template string, octal/binary number and some keywords...)
-* Support [ES2016][] syntax (exponentiation operator)
-* Support [ES2017][] syntax (`async` function and `await` operator)
-* Support ES2018 syntax (regexp dotall flag)
-* Support [JSDoc][] tag highlighting
-* Support [UMD][] ([CommonJS][], [AMD][] and classic style loading)
+* It is small. The size is only 2.0KB or 1.4KB if gzipepd.
+* It needs no other libraries.
+* It supports [ES2015][], [ES2016][], [ES2017][] and ES2018 syntax also.
 
 [es2015]: http://www.ecma-international.org/ecma-262/6.0/
 [es2016]: http://www.ecma-international.org/ecma-262/7.0/
 [es2017]: http://www.ecma-international.org/ecma-262/8.0/
-[jsdoc]: http://usejsdoc.org/
-[umd]: https://github.com/umdjs/umd
-[commonjs]: https://en.wikipedia.org/wiki/CommonJS
-[amd]: https://github.com/amdjs/amdjs-api/blob/master/AMD.md
 
 ## Install
 
+NPM:
+
 ```console
-$ npm install --save h.js
+$ npm install h.js
 ```
 
-or download [h.js][raw h.js] directly.
+Yarn:
 
-[raw h.js]: https://raw.githubusercontent.com/MakeNowJust/h.js/master/h.js
+```console
+$ yarn add h.js
+```
 
 ## Usage
 
-In Node.js, you can use `require`:
+CommonJS:
 
 ```javascript
 const h = require("h.js");
-console.log(h("1 + 2"));
-//=> '<span class=v>1</span> <span class=o>+</span> <span class=v>2</span>'
 ```
 
-In Browser, you add `<script>` tag to load h.js and put this script into the tail of `<body>`:
+ES module:
 
 ```javascript
-Array.from(document.querySelectorAll("pre code.h-js")).forEach(code => {
-  code.innerHTML = h(code.textContent);
-});
+import * as h from "h.js";
 ```
 
-## API
+### API
 
 ```javascript
 /**
@@ -67,23 +55,21 @@ Array.from(document.querySelectorAll("pre code.h-js")).forEach(code => {
  * @param {string} source - JavaScript source code.
  * @return {string} - Highlighted source code.
  */
-const h = source => {
+const h = source => ...
 ```
 
-It returns HTML text which contains `<span>` element having such a class:
+It returns an HTML string which contains some `<span>` elements having such classes:
 
-* `<span class=c>...</span>` means a comment.
-* `<span class=d>...</span>` means a JSDoc tag (it appears only in comment.)
-* `<span class=k>...</span>` means a keyword.
-* `<span class=v>...</span>` means a value (number, boolean and some constants.)
-* `<span class=s>...</span>` means a string (also means a template string.)
-* `<span class=i>...</span>` means an interpolation (it appears only in template string.)
-* `<span class=r>...</span>` means a regexp.
-* `<span class=o>...</span>` means an operator.
-* `<span class=p>...</span>` means a punctual symbol.
-* `<span class=f>...</span>` means a function name.
-
-You can define styles of those classes in your CSS.
+* `<span class=c>...</span>`: comment
+* `<span class=d>...</span>`: JSDoc tag (only in comment)
+* `<span class=k>...</span>`: keyword
+* `<span class=v>...</span>`: value (number literal, boolean and some constants)
+* `<span class=s>...</span>`: string literal (also means a template string)
+* `<span class=i>...</span>`: interpolation content (only in template string)
+* `<span class=r>...</span>`: regexp literal
+* `<span class=o>...</span>`: operator symbol
+* `<span class=p>...</span>`: punctual symbol
+* `<span class=f>...</span>`: function name
 
 ## License
 
