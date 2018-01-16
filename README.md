@@ -18,7 +18,7 @@ __2KB__ JavaScript Syntax Highlighter
   - Support [ES2015][] syntax (template string, octal/binary number and some keywords...)
   - Support [ES2016][] syntax (exponentiation operator)
   - Support [ES2017][] syntax (`async` function and `await` operator)
-  - Support [ES2018][] syntax (regexp dotall flag)
+  - Support ES2018 syntax (regexp dotall flag)
   - Support [JSDoc][] tag highlighting
   - Support [UMD][] ([CommonJS][], [AMD][] and classic style loading)
 
