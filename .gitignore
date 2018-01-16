@@ -1,2 +1,7 @@
+# Node.js
 node_modules/
 *.log
+
+# Nuxt.js
+.nuxt/
+dist/

@@ -1,6 +1,6 @@
 # [h.js]
 
-__2KB__ JavaScript Syntax Highlighter
+**2KB** JavaScript Syntax Highlighter
 
 [![Build Status](https://img.shields.io/travis/MakeNowJust/h.js.svg?style=flat-square)](https://travis-ci.org/MakeNowJust/h.js)
 [![Dependencies](https://img.shields.io/david/MakeNowJust/h.js.svg?style=flat-square)](https://david-dm.org/MakeNowJust/h.js#info=dependencies)
@@ -12,27 +12,23 @@ __2KB__ JavaScript Syntax Highlighter
 
 ## Feature
 
-  - Only 2.0KB (or 1.4KB if gzipepd)
-  - Of cource, self contained
-  - Exact highlighting (Did you see mis-highlighted regexp or else?)
-  - Support [ES2015][] syntax (template string, octal/binary number and some keywords...)
-  - Support [ES2016][] syntax (exponentiation operator)
-  - Support [ES2017][] syntax (`async` function and `await` operator)
-  - Support ES2018 syntax (regexp dotall flag)
-  - Support [JSDoc][] tag highlighting
-  - Support [UMD][] ([CommonJS][], [AMD][] and classic style loading)
+* Only 2.0KB (or 1.4KB if gzipepd)
+* Of cource, self contained
+* Exact highlighting (Did you see mis-highlighted regexp or else?)
+* Support [ES2015][] syntax (template string, octal/binary number and some keywords...)
+* Support [ES2016][] syntax (exponentiation operator)
+* Support [ES2017][] syntax (`async` function and `await` operator)
+* Support ES2018 syntax (regexp dotall flag)
+* Support [JSDoc][] tag highlighting
+* Support [UMD][] ([CommonJS][], [AMD][] and classic style loading)
 
-See [live demo][]!
-
-[ES2015]: http://www.ecma-international.org/ecma-262/6.0/
-[ES2016]: http://www.ecma-international.org/ecma-262/7.0/
-[ES2017]: http://www.ecma-international.org/ecma-262/8.0/
-[JSDoc]: http://usejsdoc.org/
-[UMD]: https://github.com/umdjs/umd
-[CommonJS]: https://en.wikipedia.org/wiki/CommonJS
-[AMD]: https://github.com/amdjs/amdjs-api/blob/master/AMD.md
-[live demo]: http://h.js.org/demo.html
-
+[es2015]: http://www.ecma-international.org/ecma-262/6.0/
+[es2016]: http://www.ecma-international.org/ecma-262/7.0/
+[es2017]: http://www.ecma-international.org/ecma-262/8.0/
+[jsdoc]: http://usejsdoc.org/
+[umd]: https://github.com/umdjs/umd
+[commonjs]: https://en.wikipedia.org/wiki/CommonJS
+[amd]: https://github.com/amdjs/amdjs-api/blob/master/AMD.md
 
 ## Install
 
@@ -44,26 +40,23 @@ or download [h.js][raw h.js] directly.
 
 [raw h.js]: https://raw.githubusercontent.com/MakeNowJust/h.js/master/h.js
 
-
 ## Usage
 
 In Node.js, you can use `require`:
 
 ```javascript
-const h = require('h.js')
-console.log(h('1 + 2'))
+const h = require("h.js");
+console.log(h("1 + 2"));
 //=> '<span class=v>1</span> <span class=o>+</span> <span class=v>2</span>'
 ```
 
 In Browser, you add `<script>` tag to load h.js and put this script into the tail of `<body>`:
 
 ```javascript
-Array.from(document.querySelectorAll('pre code.h-js'))
-  .forEach((code) => {
-    code.innerHTML = h(code.textContent)
-  })
+Array.from(document.querySelectorAll("pre code.h-js")).forEach(code => {
+  code.innerHTML = h(code.textContent);
+});
 ```
-
 
 ## API
 
@@ -74,24 +67,23 @@ Array.from(document.querySelectorAll('pre code.h-js'))
  * @param {string} source - JavaScript source code.
  * @return {string} - Highlighted source code.
  */
-export default (source) => {
+const h = source => {
 ```
 
 It returns HTML text which contains `<span>` element having such a class:
 
-  - `<span class=c>...</span>` means a comment.
-  - `<span class=d>...</span>` means a JSDoc tag (it appears in comment.)
-  - `<span class=k>...</span>` means a keyword.
-  - `<span class=v>...</span>` means a value (number, boolean and some constants.)
-  - `<span class=s>...</span>` means a string (includes template string.)
-  - `<span class=i>...</span>` means an interpolation (it appears only in template string.)
-  - `<span class=r>...</span>` means a regexp.
-  - `<span class=o>...</span>` means an operator.
-  - `<span class=p>...</span>` means a punctual symbol.
-  - `<span class=f>...</span>` means a function name.
+* `<span class=c>...</span>` means a comment.
+* `<span class=d>...</span>` means a JSDoc tag (it appears only in comment.)
+* `<span class=k>...</span>` means a keyword.
+* `<span class=v>...</span>` means a value (number, boolean and some constants.)
+* `<span class=s>...</span>` means a string (also means a template string.)
+* `<span class=i>...</span>` means an interpolation (it appears only in template string.)
+* `<span class=r>...</span>` means a regexp.
+* `<span class=o>...</span>` means an operator.
+* `<span class=p>...</span>` means a punctual symbol.
+* `<span class=f>...</span>` means a function name.
 
 You can define styles of those classes in your CSS.
-
 
 ## License
 

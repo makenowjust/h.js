@@ -1,0 +1,55 @@
+@import "~bulma/sass/utilities/initial-variables.sass";
+
+@import url("https://fonts.googleapis.com/css?family=Share+Tech+Mono");
+
+::selection {
+  background-color: rgba($orange, 0.5);
+}
+
+pre code {
+  font-family: "Share Tech Mono", monospace;
+  color: $black-bis;
+
+  span.c {
+    // comment
+    color: $grey;
+    font-style: italic;
+  }
+  span.d {
+    // JSDoc
+    color: $orange;
+  }
+  span.k {
+    // keyword
+    color: $red;
+  }
+  span.v {
+    // value
+    color: $blue;
+  }
+  span.s {
+    // string
+    color: $cyan;
+  }
+  span.i {
+    // interpolation
+    color: $turquoise;
+  }
+  span.r {
+    // regexp
+    color: $purple;
+  }
+  span.o {
+    // operator
+    color: $green;
+  }
+  span.p {
+    // punctual symbol
+    color: $turquoise;
+  }
+  span.f {
+    // function name
+    color: $black;
+    font-weight: bold;
+  }
+}
