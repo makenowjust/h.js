@@ -1,7 +1,7 @@
 {
   "name": "h.js",
   "description": "Only 2KB JavaScript Syntax Highlighter",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "author": "TSUYUSATO Kitsune <make.just.on@gmail.com>",
   "bugs": {
     "url": "https://github.com/makenowjust/h.js/issues"
@@ -17,9 +17,14 @@
     "prettier": "^1.10.2",
     "sass-loader": "^6.0.6"
   },
-  "files": ["h.js"],
+  "files": [
+    "h.js"
+  ],
   "homepage": "https://h.js.org/",
-  "keywords": ["highlight", "syntax"],
+  "keywords": [
+    "highlight",
+    "syntax"
+  ],
   "license": "MIT",
   "main": "h.js",
   "repository": {
