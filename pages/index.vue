@@ -41,12 +41,12 @@ export default {
   props: ["page"],
   head() {
     return {
-      titleTemplate: '%s - h.js'
-    }
+      titleTemplate: "%s - h.js"
+    };
   },
   computed: {
     hjs() {
-      console.log(this.$route.path)
+      console.log(this.$route.path);
       return h(rawHjs);
     }
   }
