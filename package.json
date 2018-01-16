@@ -27,6 +27,6 @@
     "url": "git+https://github.com/makenowjust/h.js.git"
   },
   "scripts": {
-    "test": "yarn prettier --list-different '**/*.{js,json,scss,vue,md}' && ava"
+    "test": "prettier --list-different '**/*.{js,json,scss,vue,md}' && ava"
   }
 }
