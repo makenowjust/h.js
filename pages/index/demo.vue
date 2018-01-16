@@ -1,7 +1,5 @@
 <template>
   <div>
-    <hjs-hero page="/demo"></hjs-hero>
-
     <section class="section">
       <div class="container">
         <div class="field">
@@ -44,8 +42,6 @@
 </style>
 
 <script>
-import HjsHero from "~/components/hjs-hero.vue";
-
 import * as h from "~";
 
 const trimIndent = parts => {
@@ -61,10 +57,9 @@ const trimIndent = parts => {
 };
 
 export default {
-  components: { HjsHero },
   head() {
     return {
-      title: "h.js demonstration"
+      title: "demonstration"
     };
   },
   data() {
