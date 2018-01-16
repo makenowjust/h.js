@@ -167,7 +167,7 @@ test('template literal', t => {
 test('regexp', t => {
 	[
 		'/regexp/',
-		'/regexp/imguy',
+		'/regexp/imguys',
 		'/regular expression/',
 		'/\\//',
 		'/[/]/'
