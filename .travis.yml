@@ -8,6 +8,7 @@ before_deploy:
 deploy:
   provider: pages
   skip-cleanup: true
+  keep_history: true
   github-token: $GITHUB_TOKEN
   local-dir: dist
   name: TSUYUSATO Kitsune
