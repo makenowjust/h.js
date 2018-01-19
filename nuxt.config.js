@@ -13,6 +13,12 @@ module.exports = {
   },
   modules: ["@nuxtjs/markdownit", "@nuxtjs/bulma", "@nuxtjs/font-awesome"],
   css: ["~assets/scss/h.scss"],
+  head: {
+    meta: [
+      { charset: "utf-8" },
+      { name: "viewport", content: "width=device-width, initial-scale=1" }
+    ]
+  },
   markdownit: {
     highlight: (src, lang) => {
       if (lang === "javascript") {
