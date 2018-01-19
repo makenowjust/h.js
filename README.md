@@ -34,26 +34,21 @@ $ yarn add h.js
 
 ## Usage
 
-CommonJS:
-
 ```javascript
 const h = require("h.js");
-```
 
-ES module:
-
-```javascript
-import * as h from "h.js";
+console.log(h("1 + 2"));
+// => <span class=v>1</span> <span class=o>+</span> <span class=v>2</span>
 ```
 
 ### API
 
 ```javascript
 /**
- * Highlight JavaScript source code.
+ * `h` highlights JavaScript source code.
  *
- * @param {string} source - JavaScript source code.
- * @return {string} - Highlighted source code.
+ * @param {string} source - JavaScript source code
+ * @return {string} - highlighted HTML string
  */
 const h = source => ...
 ```
