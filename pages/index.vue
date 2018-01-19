@@ -29,10 +29,17 @@
 
 <style lang="scss" scoped>
 .logo {
-  font-size: 0.6em;
+  font-size: 0.5rem;
   width: 42em;
   padding: 1em;
   margin: 2em auto;
+}
+
+@media (max-width: 768px) {
+  .logo {
+    font-size: 2vw;
+    width: 84vw;
+  }
 }
 
 .tabs .is-active a {
@@ -53,7 +60,6 @@ export default {
   },
   computed: {
     hjs() {
-      console.log(this.$route.path);
       return h(rawHjs);
     }
   }
