@@ -29,10 +29,10 @@
 
 <style lang="scss" scoped>
 .logo {
-  font-size: 0.4em;
-  width: 44em;
+  font-size: 0.6em;
+  width: 42em;
   padding: 1em;
-  margin: auto auto 2em auto;
+  margin: 2em auto;
 }
 
 .tabs .is-active a {
