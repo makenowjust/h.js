@@ -22,7 +22,7 @@ sY+'___k_vs_ppof     '[m.i   ndexOf82]    ,2+1)]   +'>'+e829+'4')   ,p=
 m),(fV810-1]=Y}'     Vf--|   |m[7+1]=Y    {'Vf++   R,82+2]||m[7+1    ]|
 |m[109Vr();retur     nU?[t   +e8   19,    685)]:   t+e    (sR}Rz=    >q
 typeofZdefineY='     Wunct   ion   V&&             U(m    TleSs=    R))
-Q.replace(/P\`M$     {L(K K  \\J   <spa            nKx20cl        asH}4
+Q.replace(/P\`M$     {L(KK   \\J   <spa           nKx20cl         asH}4
 G(?DG:9])8U[6s.slice50].Tngth4</span>`.replace(/\s/g,'');for((c)in(p))s
 =(c=s.split(p[c])).join(c.pop());eval(s)})`45689DGHJKLMPQRSTUVWYZqz`/**
 **********************/// (C) 2015-2018 TSUYUSATO "MakeNowJust" Kitsune
