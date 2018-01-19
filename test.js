@@ -20,10 +20,10 @@ test("comment", t => {
     "/**/",
     "// This is a comment",
     `/* These
-			* Lines
-			* are
-			* Comments
-			*/`,
+      * Lines
+      * are
+      * Comments
+      */`,
     "/*",
     "/* *"
   ].forEach(source => {
@@ -49,8 +49,8 @@ test("document comment", t => {
 
 test("keyword", t => {
   w`break catch class const continue default do else finally function for from
-		if import let static super switch this try var while with await case delete
-		export extends in instanceof of new return throw typeof void yield`.forEach(
+    if import let static super switch this try var while with await case delete
+    export extends in instanceof of new return throw typeof void yield`.forEach(
     keyword => {
       highlight(t, keyword, `<span class=k>${he(keyword)}</span>`);
       highlight(t, `.${keyword}`, `<span class=p>.</span>${he(keyword)}`);
