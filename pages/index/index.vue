@@ -1,9 +1,7 @@
 <template>
-  <section class="section">
-    <div class="container">
-      <div class="content" v-html="readme"></div>
-    </div>
-  </section>
+  <div class="container">
+    <div class="content" v-html="readme"></div>
+  </div>
 </template>
 
 <script>

@@ -1,37 +1,33 @@
 <template>
-  <div>
-    <section class="section">
-      <div class="container">
-        <div class="field">
-          <label for="source" class="label">Input:</label>
-          <textarea v-model="source" id="source" class="textarea source" rows="10"></textarea>
-        </div>
+  <div class="container">
+    <div class="field">
+      <label for="source" class="label">Input:</label>
+      <textarea v-model="source" id="source" class="textarea source" rows="10"></textarea>
+    </div>
 
-        <div class="tabs">
-          <ul>
-            <li v-bind:class="{'is-active': tab === 'rendered'}">
-              <a v-on:click="changeTab('rendered')">
-                <span class="icon is-small"><i class="fa fa-paint-brush"></i></span>
-                <span>Rendered</span>
-              </a>
-            </li>
-            <li v-bind:class="{'is-active': tab === 'html'}">
-              <a v-on:click="changeTab('html')">
-                <span class="icon is-small"><i class="fa fa-code"></i></span>
-                <span>HTML</span>
-              </a>
-            </li>
-          </ul>
-        </div>
+    <div class="tabs">
+      <ul>
+        <li v-bind:class="{'is-active': tab === 'rendered'}">
+          <a v-on:click="changeTab('rendered')">
+            <span class="icon is-small"><i class="fa fa-paint-brush"></i></span>
+            <span>Rendered</span>
+          </a>
+        </li>
+        <li v-bind:class="{'is-active': tab === 'html'}">
+          <a v-on:click="changeTab('html')">
+            <span class="icon is-small"><i class="fa fa-code"></i></span>
+            <span>HTML</span>
+          </a>
+        </li>
+      </ul>
+    </div>
 
-        <div class="content" v-if="tab === 'rendered'">
-          <pre><code v-html="highlighted"></code></pre>
-        </div>
-        <div class="content" v-if="tab === 'html'">
-          <pre><code v-text="highlighted"></code></pre>
-        </div>
-      </div>
-    </section>
+    <div class="content" v-if="tab === 'rendered'">
+      <pre><code v-html="highlighted"></code></pre>
+    </div>
+    <div class="content" v-if="tab === 'html'">
+      <pre><code v-text="highlighted"></code></pre>
+    </div>
   </div>
 </template>
 

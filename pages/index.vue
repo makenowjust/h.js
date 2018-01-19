@@ -21,15 +21,22 @@
       </div>
     </section>
 
-    <nuxt-child></nuxt-child>
+    <section class="section">
+      <nuxt-child></nuxt-child>
+    </section>
   </div>
 </template>
 
 <style lang="scss" scoped>
 .logo {
-  font-size: 0.5em;
+  font-size: 0.4em;
   width: 44em;
+  padding: 1em;
   margin: auto auto 2em auto;
+}
+
+.tabs .is-active a {
+  background-color: #fff !important;
 }
 </style>
 
