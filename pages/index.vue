@@ -28,22 +28,23 @@
 </template>
 
 <style lang="scss" scoped>
+@import "~bulma/sass/utilities/initial-variables.sass";
+@import "~bulma/sass/utilities/mixins.sass";
+
 .logo {
   font-size: 0.5rem;
   width: 42em;
   padding: 1em;
   margin: 2em auto;
-}
 
-@media (max-width: 768px) {
-  .logo {
+  @include mobile {
     font-size: 2vw;
     width: 84vw;
   }
 }
 
 .tabs .is-active a {
-  background-color: #fff !important;
+  background-color: $white !important;
 }
 </style>
 
