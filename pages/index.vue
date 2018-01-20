@@ -24,6 +24,21 @@
     <section class="section">
       <nuxt-child></nuxt-child>
     </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="content has-text-centered">
+          <p>
+            <a class="icon is-medium has-text-dark" href="https://github.com/MakeNowJust/h.js">
+              <i class="fa fa-2x fa-github"></i>
+            </a>
+          </p>
+          <p>
+          (C) 2015-2018 TSUYUSATO "<a href="https://github.com/MakeNowJust">MakeNowJust</a>" Kitsune
+          </p>
+        </div>
+      </div>
+    </footer>
   </div>
 </template>
 
