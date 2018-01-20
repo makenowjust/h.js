@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <div class="columns is-desktop">
+    <div class="columns is-flex-tablet">
       <div class="column is-6">
         <div class="field">
           <label for="source" class="label">Input:</label>
