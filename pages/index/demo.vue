@@ -79,14 +79,14 @@ export default {
   methods: {
     changeTab(tab) {
       this.tab = tab;
-    },
+    }
   },
   computed: {
     highlighted() {
       return h(this.source);
     },
     rows() {
-      const lines = this.source.split('\n');
+      const lines = this.source.split("\n");
       return Math.max(5, lines.length);
     }
   }
