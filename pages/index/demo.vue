@@ -61,7 +61,7 @@ const trimIndent = parts => {
 export default {
   head() {
     return {
-      title: "demonstration"
+      title: "Live Demo"
     };
   },
   data() {

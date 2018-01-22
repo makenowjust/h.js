@@ -14,7 +14,7 @@
           <div class="container">
             <ul>
               <li v-bind:class="{'is-active': $route.path === '/'}"><nuxt-link to="/">README</nuxt-link></li>
-              <li v-bind:class="{'is-active': $route.path === '/demo/'}"><nuxt-link to="/demo/">Demonstration</nuxt-link></li>
+              <li v-bind:class="{'is-active': $route.path === '/demo/'}"><nuxt-link to="/demo/">Live Demo</nuxt-link></li>
             </ul>
           </div>
         </nav>
