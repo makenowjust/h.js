@@ -43,6 +43,8 @@
 </template>
 
 <style lang="scss" scoped>
+@import url('https://fonts.googleapis.com/css?family=Nothing+You+Could+Do');
+
 @import "~bulma/sass/utilities/initial-variables.sass";
 @import "~bulma/sass/utilities/mixins.sass";
 
@@ -57,6 +59,14 @@
       font-size: 2vw;
       width: 84vw;
     }
+  }
+
+  .title, .subtitle {
+    font-family: 'Noghint You Could Do', cursive;
+  }
+
+  .subtitle {
+    margin-top: -1.0rem;
   }
 
   // For opening animation:
