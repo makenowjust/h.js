@@ -1,4 +1,4 @@
-module.exports=(([p],s=[...p].reduce((s,c)=>(c=s.split(c)).join(c.pop()
+export default (([p],s=[...p].reduce((s,c)=>(c=s.split(c)).join(c.pop()
 ),`(hzh=q,f,t='',e=tztj[<&]/g,czZ&#Yc.charCodeAt()};ZWc=_z(_=sj^Vs*)V/V
 /.*|U*([^]*?U*U/|[^]*T)/,(_,w,m)z(t+=ZYw}Sc>YRm)j@Uw+/g,dzZSd>YdQZ)QZ,'
 'T)==s?q=_):cq=_Wr=_zq=cq)j^Vs*)V/[^*](V[VU.|.)*?U]|UU.|.)+?U/[imguys]*

@@ -44,7 +44,7 @@
 </style>
 
 <script>
-import * as h from "~";
+import h from "~";
 
 const trimIndent = parts => {
   const lines = parts.join("").split(/\n/g);

@@ -120,7 +120,7 @@
 
 <script>
 import rawHjs from "!raw-loader!~/h.js";
-import * as h from "~";
+import h from "~";
 
 export default {
   props: ["page"],

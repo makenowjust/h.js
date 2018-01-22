@@ -2,7 +2,7 @@ import { inspect } from "util";
 
 import test from "ava";
 
-import h from ".";
+import h from "./h.js";
 
 const he = s => s.replace(/[&<]/g, s => `&#${s.charCodeAt(0)};`);
 const highlight = (t, source, expect) => {
