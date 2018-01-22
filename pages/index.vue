@@ -46,20 +46,64 @@
 @import "~bulma/sass/utilities/initial-variables.sass";
 @import "~bulma/sass/utilities/mixins.sass";
 
-.logo {
-  font-size: 0.5rem;
-  width: 42em;
-  padding: 1em;
-  margin: 2em auto;
+.hero-body {
+  .logo {
+    font-size: 0.5rem;
+    width: 42em;
+    padding: 1em;
+    margin: 2em auto;
 
-  @include mobile {
-    font-size: 2vw;
-    width: 84vw;
+    @include mobile {
+      font-size: 2vw;
+      width: 84vw;
+    }
+  }
+
+  // For opening animation:
+
+  $logo-anime-duration: 0.5s;
+  $title-anime-duration: 0.4s;
+  $title-anime-delay: $logo-anime-duration + 0.3s;
+  $subtitle-anime-delay: $title-anime-delay + $title-anime-duration;
+
+  .logo {
+    animation: logo ease-in $logo-anime-duration forwards;
+    opacity: 0;
+  }
+
+  .title,
+  .subtitle {
+    animation: title ease-in $title-anime-duration forwards;
+    opacity: 0;
+  }
+
+  .title {
+    animation-delay: $title-anime-delay;
+  }
+
+  .subtitle {
+    animation-delay: $subtitle-anime-delay;
   }
 }
 
 .tabs .is-active a {
   background-color: $white !important;
+}
+
+@keyframes logo {
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes title {
+  0% {
+    transform: translateY(0.4em);
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 </style>
 
