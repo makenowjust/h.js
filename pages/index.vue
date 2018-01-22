@@ -69,7 +69,7 @@
     margin-top: -1.0rem;
   }
 
-  // For opening animation:
+  // Opening animation stuffs
 
   $logo-anime-duration: 0.5s;
   $title-anime-duration: 0.4s;
