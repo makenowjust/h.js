@@ -34,7 +34,7 @@
             </a>
           </p>
           <p>
-          (C) 2015-2018 TSUYUSATO "<a href="https://github.com/MakeNowJust">MakeNowJust</a>" Kitsune
+            Made by TSUYUSATO "<a href="https://github.com/MakeNowJust">MakeNowJust</a>" Kitsune
           </p>
         </div>
       </div>
