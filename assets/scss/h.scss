@@ -10,45 +10,77 @@ pre code {
   font-family: "Share Tech Mono", monospace;
   color: $black-bis;
 
-  span.c {
-    // comment
+  // comment
+  span.c,
+  .hljs-comment {
     color: $grey;
     font-style: italic;
   }
-  span.d {
-    // JSDoc
+
+  // JSDoc tag
+  span.d,
+  .hljs-doctag,
+  .hljs-meta,
+  .hljs-name {
     color: $orange;
   }
-  span.k {
-    // keyword
+
+  // keyword
+  span.k,
+  .hljs-keyword,
+  .hljs-class,
+  .hljs-function,
+  .hljs-meta-keyword {
     color: $red;
   }
-  span.v {
-    // value
+
+  // value
+  span.v,
+  .hljs-literal,
+  .hljs-number,
+  .hljs-symbol,
+  .hljs-builtin-name {
     color: $blue;
   }
-  span.s {
-    // string
+
+  // string
+  span.s,
+  .hljs-string,
+  .hljs-meta-string,
+  .hljs-section {
     color: $cyan;
   }
-  span.i {
-    // interpolation
+
+  // interpolation
+  span.i,
+  .hljs-subst {
     color: $turquoise;
   }
-  span.r {
-    // regexp
+
+  // regexp
+  span.r,
+  .hljs-regexp,
+  .hljs-attr {
     color: $purple;
   }
+
+  // operator
   span.o {
-    // operator
     color: $green;
   }
-  span.p {
-    // punctual symbol
+
+  // punctual symbol
+  span.p,
+  .hljs-tag {
     color: $turquoise;
   }
-  span.f {
-    // function name
+
+  // function name
+  span.f,
+  .hljs-builtin,
+  .hljs-type,
+  .hljs-title,
+  .hljs-params {
     color: $black;
     font-weight: bold;
   }

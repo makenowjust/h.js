@@ -1,4 +1,7 @@
 const h = require(".");
+const hljs = require("highlight.js");
+
+const replaceDelimiter = s => s.replace(/({{|}})/g, "<span>$1</span>");
 
 module.exports = {
   mode: "spa",
@@ -22,9 +25,13 @@ module.exports = {
   markdownit: {
     highlight: (src, lang) => {
       if (lang === "javascript") {
-        src = h(src);
+        return `<pre><code>${replaceDelimiter(h(src))}</code></pre>`;
+      } else if (lang && hljs.getLanguage(lang)) {
+        try {
+          return replaceDelimiter(hljs.highlight(lang, src, true).value);
+        } catch (e) {}
       }
-      return `<pre><code>${src}</code></pre>`;
+      return "";
     }
   }
 };

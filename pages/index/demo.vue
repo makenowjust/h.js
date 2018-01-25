@@ -30,7 +30,7 @@
           <pre><code v-html="highlighted"></code></pre>
         </div>
         <div class="content" v-if="tab === 'html'">
-          <pre><code v-text="highlighted"></code></pre>
+          <pre><code v-html="highlightedHTML"></code></pre>
         </div>
       </div>
     </div>
@@ -45,6 +45,7 @@
 
 <script>
 import h from "~";
+import * as hljs from "highlight.js";
 
 const trimIndent = parts => {
   const lines = parts.join("").split(/\n/g);
@@ -84,6 +85,9 @@ export default {
   computed: {
     highlighted() {
       return h(this.source);
+    },
+    highlightedHTML() {
+      return hljs.highlight("html", this.highlighted, true).value;
     },
     rows() {
       const lines = this.source.split("\n");
