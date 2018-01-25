@@ -63,7 +63,7 @@
 
   .title,
   .subtitle {
-    font-family: "Noghint You Could Do", cursive;
+    font-family: "Nothing You Could Do", cursive;
   }
 
   .subtitle {
