@@ -54,7 +54,11 @@
 
 <script>
 import h from "~";
-import * as hljs from "highlight.js";
+import * as hljs from "highlight.js/lib/highlight.js";
+
+import * as hljsXML from "highlight.js/lib/languages/xml";
+
+hljs.registerLanguage('xml', hljsXML);
 
 const trimIndent = parts => {
   const lines = parts.join("").split(/\n/g);
