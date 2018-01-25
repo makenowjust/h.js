@@ -53,7 +53,7 @@
     font-size: 0.5rem;
     width: 42em;
     padding: 1em;
-    margin: 2em auto;
+    margin: auto auto 2em auto;
 
     @include mobile {
       font-size: 2vw;
