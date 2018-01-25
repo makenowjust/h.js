@@ -81,7 +81,7 @@ export default {
         const words = parts => parts.join('').split(/\\s+/g);
 
         for (const word of words\`hello h.js world\`) {
-         console.log(word);
+          console.log(word);
         }
       `
     };
