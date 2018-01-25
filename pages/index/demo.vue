@@ -2,8 +2,17 @@
   <div class="container">
     <div class="columns is-flex-tablet">
       <div class="column is-6">
+        <div class="tabs">
+          <ul>
+            <li class="is-active">
+              <a>
+                <span class="icon is-small"><i class="fa fa-terminal"></i></span>
+                <label for="source">Input</label>
+              </a>
+            </li>
+          </ul>
+        </div>
         <div class="field">
-          <label for="source" class="label">Input:</label>
           <textarea v-model="source" id="source" class="textarea source" :rows="rows"></textarea>
         </div>
       </div>
