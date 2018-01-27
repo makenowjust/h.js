@@ -10,7 +10,7 @@
     "@nuxtjs/bulma": "^1.1.0",
     "@nuxtjs/font-awesome": "^1.0.3",
     "@nuxtjs/markdownit": "^1.2.0",
-    "ava": "^0.24.0",
+    "ava": "^0.25.0",
     "bulma": "^0.6.2",
     "highlight.js": "^9.12.0",
     "node-sass": "^4.7.2",
