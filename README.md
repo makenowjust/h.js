@@ -10,7 +10,7 @@
 
 ## Features
 
-* It is small. The size is only 2.0KB or 1.4KB if gzipepd.
+* It is small. The size is only 2.0KB or 1.4KB if gzipped.
 * It needs no other libraries.
 * It supports [ES2015][], [ES2016][], [ES2017][] and ES2018 syntax also.
 
