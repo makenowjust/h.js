@@ -10,17 +10,23 @@
     "@nuxtjs/bulma": "^1.1.0",
     "@nuxtjs/font-awesome": "^1.0.3",
     "@nuxtjs/markdownit": "^1.2.0",
-    "ava": "^0.25.0",
-    "bulma": "^0.6.2",
+    "ava": "^2.4.0",
+    "bulma": "^0.8.0",
     "highlight.js": "^9.12.0",
     "node-sass": "^4.7.2",
-    "nuxt": "^1.1.1",
+    "nuxt": "^2.10.1",
     "prettier": "^1.10.2",
-    "sass-loader": "^6.0.6"
+    "sass-loader": "^8.0.0"
   },
-  "files": ["h.js", "h.mjs"],
+  "files": [
+    "h.js",
+    "h.mjs"
+  ],
   "homepage": "https://h.js.org/",
-  "keywords": ["highlight", "syntax"],
+  "keywords": [
+    "highlight",
+    "syntax"
+  ],
   "license": "MIT",
   "main": "h.js",
   "module": "h.mjs",
