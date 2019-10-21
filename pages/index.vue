@@ -5,7 +5,9 @@
         <div class="container has-text-centered">
           <pre class="logo"><code v-html="hjs"></code></pre>
           <h1 class="title">h.js</h1>
-          <p class="subtitle"><strong>2KB</strong> JavaScript Syntax Highlighter</p>
+          <p class="subtitle">
+            <strong>2KB</strong> JavaScript Syntax Highlighter
+          </p>
         </div>
       </div>
 
@@ -13,8 +15,12 @@
         <nav class="tabs is-boxed is-fullwidth">
           <div class="container">
             <ul>
-              <li v-bind:class="{'is-active': $route.path === '/'}"><nuxt-link to="/">README</nuxt-link></li>
-              <li v-bind:class="{'is-active': $route.path === '/demo/'}"><nuxt-link to="/demo/">Live Demo</nuxt-link></li>
+              <li v-bind:class="{ 'is-active': $route.path === '/' }">
+                <nuxt-link to="/">README</nuxt-link>
+              </li>
+              <li v-bind:class="{ 'is-active': $route.path === '/demo/' }">
+                <nuxt-link to="/demo/">Live Demo</nuxt-link>
+              </li>
             </ul>
           </div>
         </nav>
@@ -29,12 +35,17 @@
       <div class="container">
         <div class="content has-text-centered">
           <p>
-            <a class="icon is-medium has-text-dark" href="https://github.com/MakeNowJust/h.js">
+            <a
+              class="icon is-medium has-text-dark"
+              href="https://github.com/MakeNowJust/h.js"
+            >
               <i class="fa fa-2x fa-github"></i>
             </a>
           </p>
           <p>
-            Made by TSUYUSATO "<a href="https://github.com/MakeNowJust">MakeNowJust</a>" Kitsune
+            Made by TSUYUSATO "<a href="https://github.com/MakeNowJust"
+              >MakeNowJust</a
+            >" Kitsune
           </p>
         </div>
       </div>
@@ -46,6 +57,7 @@
 @import url("https://fonts.googleapis.com/css?family=Nothing+You+Could+Do");
 
 @import "~bulma/sass/utilities/initial-variables.sass";
+@import "~bulma/sass/utilities/derived-variables.sass";
 @import "~bulma/sass/utilities/mixins.sass";
 
 .hero-body {

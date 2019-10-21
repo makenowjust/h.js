@@ -6,27 +6,36 @@
           <ul>
             <li class="is-active">
               <a>
-                <span class="icon is-small"><i class="fa fa-terminal"></i></span>
+                <span class="icon is-small"
+                  ><i class="fa fa-terminal"></i
+                ></span>
                 <label for="source">Input</label>
               </a>
             </li>
           </ul>
         </div>
         <div class="field">
-          <textarea v-model="source" id="source" class="textarea source" :rows="rows"></textarea>
+          <textarea
+            v-model="source"
+            id="source"
+            class="textarea source"
+            :rows="rows"
+          ></textarea>
         </div>
       </div>
 
       <div class="column is-6">
         <div class="tabs">
           <ul>
-            <li v-bind:class="{'is-active': tab === 'rendered'}">
+            <li v-bind:class="{ 'is-active': tab === 'rendered' }">
               <a v-on:click="changeTab('rendered')">
-                <span class="icon is-small"><i class="fa fa-paint-brush"></i></span>
+                <span class="icon is-small"
+                  ><i class="fa fa-paint-brush"></i
+                ></span>
                 <span>Rendered</span>
               </a>
             </li>
-            <li v-bind:class="{'is-active': tab === 'html'}">
+            <li v-bind:class="{ 'is-active': tab === 'html' }">
               <a v-on:click="changeTab('html')">
                 <span class="icon is-small"><i class="fa fa-code"></i></span>
                 <span>HTML</span>
