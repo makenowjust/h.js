@@ -1,4 +1,5 @@
 import { inspect } from "util";
+import * as rollup from "rollup";
 
 import test from "ava";
 
@@ -358,4 +359,15 @@ for (i = 1; i <= 100; i++) {
   ].forEach(([source, expected]) => {
     highlight(t, source, expected);
   });
+});
+
+test("no warning on rollup", async t => {
+  const bundle = await rollup.rollup({
+    input: "./h.mjs",
+    onwarn: warning => t.fail(`warning ${inspect(warning)}`)
+  });
+  const { output } = await bundle.generate({
+    format: "cjs"
+  });
+  t.pass();
 });
