@@ -6,7 +6,6 @@
 [![MIT License](https://img.shields.io/npm/l/h.js.svg?style=flat-square)](https://makenowjust.mit-license.org/2015-2019)
 [![SUSHI-WARE License](https://img.shields.io/badge/license-SUSHI--WARE%F0%9F%8D%A3-blue.svg?style=flat-square)](https://github.com/MakeNowJust/sushi-ware)
 
-
 ## Features
 
 - It is small. The size is only 2.0KB or 1.4KB if gzipped.
