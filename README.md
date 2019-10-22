@@ -2,10 +2,8 @@
 
 > **2KB** JavaScript Syntax Highlighter
 
-[![Dependencies](https://img.shields.io/david/MakeNowJust/h.js.svg?style=flat-square)](https://david-dm.org/MakeNowJust/h.js#info=dependencies)
-[![DevDependencies](https://img.shields.io/david/dev/MakeNowJust/h.js.svg?style=flat-square)](https://david-dm.org/MakeNowJust/h.js#info=devDependencies)
 [![Version](https://img.shields.io/npm/v/h.js.svg?style=flat-square)](https://www.npmjs.com/package/h.js)
-[![License](https://img.shields.io/npm/l/h.js.svg?style=flat-square)](https://makenowjust.mit-license.org/2015-2018)
+[![License](https://img.shields.io/npm/l/h.js.svg?style=flat-square)](https://makenowjust.mit-license.org/2015-2019)
 
 ## Features
 
