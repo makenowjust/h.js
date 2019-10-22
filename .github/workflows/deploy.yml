@@ -1,8 +1,10 @@
-name: test and deploy
-on: [push]
+name: deploy
+on:
+  push:
+    branches: [master]
 
 jobs:
-  build:
+  test:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@master
@@ -10,10 +12,9 @@ jobs:
       with:
         node-version: '12.x'
     - run: yarn install
-    - run: yarn test
+    - run: yarn nuxt generate
     - uses: peaceiris/actions-gh-pages@v2.5.0
       env:
         ACTIONS_DEPLOY_KEY: ${{ secrets.ACTIONS_DEPLOY_KEY }}
         PUBLISH_BRANCH: gh-pages
         PUBLISH_DIR: ./dist
-      if: github.ref == 'master'
