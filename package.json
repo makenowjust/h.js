@@ -7,17 +7,17 @@
     "url": "https://github.com/makenowjust/h.js/issues"
   },
   "devDependencies": {
-    "@nuxtjs/bulma": "^1.1.0",
-    "@nuxtjs/font-awesome": "^1.0.3",
-    "@nuxtjs/markdownit": "^1.2.0",
-    "ava": "^2.4.0",
-    "bulma": "^0.8.0",
-    "highlight.js": "^9.12.0",
-    "node-sass": "^4.7.2",
-    "nuxt": "^2.10.1",
-    "prettier": "^1.10.2",
-    "rollup": "^1.25.1",
-    "sass-loader": "^8.0.0"
+    "@nuxtjs/bulma": "1.2.5",
+    "@nuxtjs/font-awesome": "1.0.4",
+    "@nuxtjs/markdownit": "1.2.7",
+    "ava": "2.4.0",
+    "bulma": "0.8.0",
+    "highlight.js": "9.15.10",
+    "node-sass": "4.12.0",
+    "nuxt": "2.10.1",
+    "prettier": "1.18.2",
+    "rollup": "1.25.1",
+    "sass-loader": "8.0.0"
   },
   "files": [
     "h.js",
