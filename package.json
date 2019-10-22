@@ -12,6 +12,7 @@
     "@nuxtjs/markdownit": "1.2.7",
     "ava": "2.4.0",
     "bulma": "0.8.0",
+    "esm": "^3.2.25",
     "highlight.js": "9.15.10",
     "node-sass": "4.12.0",
     "nuxt": "2.10.2",
@@ -37,5 +38,11 @@
   },
   "scripts": {
     "test": "prettier --list-different '**/*.{js,json,scss,vue,md}' && ava"
+  },
+  "ava": {
+    "babel": false,
+    "require": [
+      "esm"
+    ]
   }
 }

@@ -3,14 +3,20 @@ import * as rollup from "rollup";
 
 import test from "ava";
 
-import h from "./h.js";
+import h1 from "./h.js";
+import h2 from "./h.mjs";
 
 const he = s => s.replace(/[&<]/g, s => `&#${s.charCodeAt(0)};`);
 const highlight = (t, source, expect) => {
   t.is(
-    h(source),
+    h1(source),
     expect,
-    `${inspect(source)} should be highlighted as ${inspect(expect)}`
+    `h.js: ${inspect(source)} should be highlighted as ${inspect(expect)}`
+  );
+  t.is(
+    h2(source),
+    expect,
+    `h.mjs: ${inspect(source)} should be highlighted as ${inspect(expect)}`
   );
 };
 const w = s => s.join("").split(/\s+/g);
@@ -363,7 +369,7 @@ for (i = 1; i <= 100; i++) {
 
 test("no warning on rollup", async t => {
   const bundle = await rollup.rollup({
-    input: "./h.mjs",
+    input: ["./h.js", "./h.mjs"],
     onwarn: warning => t.fail(`warning ${inspect(warning)}`)
   });
   const { output } = await bundle.generate({
