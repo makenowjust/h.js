@@ -68,4 +68,6 @@ It returns an HTML string which contains some `<span>` elements having such clas
 
 ## License
 
-MIT License <https://makenowjust.mit-license.org/2015-2019> and SUSHI-WARE License <https://github.com/MakeNowJust/sushi-ware>
+[MIT](https://makenowjust.mit-license.org/2015-2019) and [🍣](https://github.com/MakeNowJust/sushi-ware)
+
+(C) 2015-2019 TSUYUSATO "[MakeNowJust](https://github.com/MakeNowJust)" Kitsune
