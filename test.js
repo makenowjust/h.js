@@ -60,37 +60,47 @@ test("keyword", t => {
     export extends in instanceof of new return throw typeof void yield`.forEach(
     keyword => {
       highlight(t, keyword, `<span class=k>${he(keyword)}</span>`);
-      highlight(t, `.${keyword}`, `<span class=p>.</span>${he(keyword)}`);
       highlight(t, `foo${keyword}`, `foo${he(keyword)}`);
       highlight(t, `${keyword}bar`, `${he(keyword)}bar`);
       highlight(t, `foo${keyword}bar`, `foo${he(keyword)}bar`);
-      highlight(
-        t,
-        `.${keyword}(`,
-        `<span class=p>.</span><span class=f>${he(
-          keyword
-        )}</span><span class=p>(</span>`
-      );
-      highlight(
-        t,
-        `.foo\n${keyword}`,
-        `<span class=p>.</span>foo\n<span class=k>${he(keyword)}</span>`
-      );
-      highlight(
-        t,
-        `.${keyword} / foo / bar`,
-        `<span class=p>.</span>${he(
-          keyword
-        )} <span class=o>/</span> foo <span class=o>/</span> bar`
-      );
       if (keyword !== "default") {
         highlight(t, `${keyword} :`, `${he(keyword)} <span class=p>:</span>`);
+      }
+      w`. ?.`.forEach(p => {
         highlight(
           t,
-          `.foo\n${keyword} :`,
-          `<span class=p>.</span>foo\n${he(keyword)} <span class=p>:</span>`
+          `${p}${keyword}`,
+          `<span class=p>${p}</span>${he(keyword)}`
         );
-      }
+        highlight(
+          t,
+          `${p}${keyword}(`,
+          `<span class=p>${p}</span><span class=f>${he(
+            keyword
+          )}</span><span class=p>(</span>`
+        );
+        highlight(
+          t,
+          `${p}foo\n${keyword}`,
+          `<span class=p>${p}</span>foo\n<span class=k>${he(keyword)}</span>`
+        );
+        highlight(
+          t,
+          `${p}${keyword} / foo / bar`,
+          `<span class=p>${p}</span>${he(
+            keyword
+          )} <span class=o>/</span> foo <span class=o>/</span> bar`
+        );
+        if (keyword !== "default") {
+          highlight(
+            t,
+            `${p}foo\n${keyword} :`,
+            `<span class=p>${p}</span>foo\n${he(
+              keyword
+            )} <span class=p>:</span>`
+          );
+        }
+      });
     }
   );
 
@@ -125,7 +135,8 @@ test("number", t => {
   [
     ["42..foo", "<span class=v>42.</span><span class=p>.</span>foo"],
     [".42.foo", "<span class=v>.42</span><span class=p>.</span>foo"],
-    ["3.14.foo", "<span class=v>3.14</span><span class=p>.</span>foo"]
+    ["3.14.foo", "<span class=v>3.14</span><span class=p>.</span>foo"],
+    ["?.1", "<span class=p>?</span><span class=v>.1</span>"]
   ].forEach(([source, expected]) => {
     highlight(t, source, expected);
   });
@@ -255,7 +266,7 @@ test("regexp", t => {
       }
     );
 
-    w`+ - * ** / % = ~ ^ & | && || > < << >> >>> ! += -= *= **= /= %= == === != !== ^= &= |= >= <= <<= >>= >>>=`.forEach(
+    w`+ - * ** / % = ~ ^ & | && || ?? > < << >> >>> ! += -= *= **= /= %= == === != !== ^= &= |= >= <= <<= >>= >>>=`.forEach(
       operator => {
         highlight(
           t,
@@ -290,7 +301,7 @@ test("regexp", t => {
 });
 
 test("operator", t => {
-  w`+ - * ** / % = ~ ^ & | && || > < << >> >>> ! += -= *= **= /= %= == === != !== ^= &= |= >= <= <<= >>= >>>=`.forEach(
+  w`+ - * ** / % = ~ ^ & | && || ?? > < << >> >>> ! += -= *= **= /= %= == === != !== ^= &= |= >= <= <<= >>= >>>=`.forEach(
     source => {
       highlight(t, `foo ${source}`, `foo <span class=o>${he(source)}</span>`);
     }
@@ -298,7 +309,7 @@ test("operator", t => {
 });
 
 test("punctual symbol", t => {
-  w`, . [ ] { } ( ) ; ? : => ...`.forEach(source => {
+  w`, . ?. [ ] { } ( ) ; ? : => ...`.forEach(source => {
     highlight(t, source, `<span class=p>${he(source)}</span>`);
   });
 });
