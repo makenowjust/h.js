@@ -10,13 +10,12 @@
 
 - It is small. The size is only 2.0KB or 1.4KB if gzipped.
 - It needs no other libraries.
-- It supports [ES2015][], [ES2016][], [ES2017][], [ES2018][] and [ES2019][] syntax also.
+- It supports [ES2019][] syntax.
+- Also, it supports some proposals syntax ([`?.`][optional chaining] and [`??`][nullish coalescing]).
 
-[es2015]: http://www.ecma-international.org/ecma-262/6.0/
-[es2016]: http://www.ecma-international.org/ecma-262/7.0/
-[es2017]: http://www.ecma-international.org/ecma-262/8.0/
-[es2018]: http://www.ecma-international.org/ecma-262/9.0/
 [es2019]: http://www.ecma-international.org/ecma-262/10.0/
+[optional chaining]: https://github.com/tc39/proposal-optional-chaining
+[nullish coalescing]: https://github.com/tc39/proposal-nullish-coalescing
 
 ## Install
 
