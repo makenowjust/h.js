@@ -996,12 +996,12 @@
     webpack-node-externals "^1.7.2"
     webpackbar "^4.0.0"
 
-"@nuxtjs/bulma@1.2.5":
-  version "1.2.5"
-  resolved "https://registry.yarnpkg.com/@nuxtjs/bulma/-/bulma-1.2.5.tgz#dc8c84170a6776d3bddca62a11b6e33fbe074730"
-  integrity sha512-12nIFy1SXrBBgigaW7Qs7hVJKWe8ODDapJE982ly9iJt5/U4ht2jAoRG7YJn5/FSJUlfqAXIrtfZRc5OtVf3Fw==
+"@nuxtjs/bulma@1.2.6":
+  version "1.2.6"
+  resolved "https://registry.yarnpkg.com/@nuxtjs/bulma/-/bulma-1.2.6.tgz#0885722545e99907e994878b987e5c872eaae6e3"
+  integrity sha512-h/YPxtbo40OkxL/wQnDsh/9Vu6V0RGFu7uaR4NB77Qe4xDUZPZiA7DKTTBGrJ0gXsVZH2xOQadMT3GqyhdM9Ww==
   dependencies:
-    bulma "^0.7.5"
+    bulma "^0.8.0"
 
 "@nuxtjs/font-awesome@1.0.4":
   version "1.0.4"
@@ -2053,15 +2053,10 @@ builtin-status-codes@^3.0.0:
   resolved "https://registry.yarnpkg.com/builtin-status-codes/-/builtin-status-codes-3.0.0.tgz#85982878e21b98e1c66425e03d0174788f569ee8"
   integrity sha1-hZgoeOIbmOHGZCXgPQF0eI9Wnug=
 
-bulma@0.8.0:
+bulma@0.8.0, bulma@^0.8.0:
   version "0.8.0"
   resolved "https://registry.yarnpkg.com/bulma/-/bulma-0.8.0.tgz#ac1606431703a4761b18a4a2d5cc1fa864a2aece"
   integrity sha512-nhf3rGyiZh/VM7FrSJ/5KeLlfaFkXz0nYcXriynfPH4vVpnxnqyEwaNGdNCVzHyyCA3cHgkQAMpdF/SFbFGZfA==
-
-bulma@^0.7.5:
-  version "0.7.5"
-  resolved "https://registry.yarnpkg.com/bulma/-/bulma-0.7.5.tgz#35066c37f82c088b68f94450be758fc00a967208"
-  integrity sha512-cX98TIn0I6sKba/DhW0FBjtaDpxTelU166pf7ICXpCCuplHWyu6C9LYZmL5PEsnePIeJaiorsTEzzNk3Tsm1hw==
 
 bytes@3.0.0:
   version "3.0.0"

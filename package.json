@@ -7,7 +7,7 @@
     "url": "https://github.com/makenowjust/h.js/issues"
   },
   "devDependencies": {
-    "@nuxtjs/bulma": "1.2.5",
+    "@nuxtjs/bulma": "1.2.6",
     "@nuxtjs/font-awesome": "1.0.4",
     "@nuxtjs/markdownit": "1.2.7",
     "ava": "2.4.0",
