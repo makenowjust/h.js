@@ -40,7 +40,6 @@
     "test": "prettier --list-different '**/*.{js,json,scss,vue,md}' && ava"
   },
   "ava": {
-    "babel": false,
     "require": [
       "esm"
     ]
