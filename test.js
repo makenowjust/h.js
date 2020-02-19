@@ -123,14 +123,16 @@ test("keyword", t => {
 });
 
 test("number", t => {
-  w`3 3.14 3.14e10 3.14e-10 0x0123456789abcdefABCDEF 0x123 0b0101 0o1234 01234 42. .42 42n 0b1n 0o1n 0xABCn 1_2_3_4_5 0xA_B_C 1_2e3_4`.forEach(
-    source => {
-      highlight(t, source, `<span class=v>${he(source)}</span>`);
-      if (!/\./.test(source)) {
-        highlight(t, `foo${source}`, `foo${he(source)}`);
-      }
+  w`3 3.14 3.14e10 3.14e-10
+    0x0123456789abcdefABCDEF 0x123 0b0101 0o1234 01234
+    42. .42
+    42n 0b1n 0o1n 0xABCn
+    1_2_3_4_5 0xA_B_C 1_2e3_4`.forEach(source => {
+    highlight(t, source, `<span class=v>${he(source)}</span>`);
+    if (!/\./.test(source)) {
+      highlight(t, `foo${source}`, `foo${he(source)}`);
     }
-  );
+  });
 
   [
     ["42..foo", "<span class=v>42.</span><span class=p>.</span>foo"],
