@@ -381,12 +381,12 @@ for (i = 1; i <= 100; i++) {
 });
 
 test("no warning on rollup", async t => {
+  t.plan(0);
   const bundle = await rollup.rollup({
     input: ["./h.js", "./h.mjs"],
     onwarn: warning => t.fail(`warning ${inspect(warning)}`)
   });
-  const { output } = await bundle.generate({
+  await bundle.generate({
     format: "cjs"
   });
-  t.pass();
 });
