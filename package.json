@@ -20,7 +20,10 @@
     "esm": "3.2.25",
     "highlight.js": "9.18.1",
     "prettier": "1.19.1",
+    "raw-loader": "^4.0.0",
     "rollup": "1.31.1",
+    "typeface-nothing-you-could-do": "^0.0.72",
+    "typeface-share-tech-mono": "^0.0.72",
     "vue": "^2.6.11",
     "vue-template-compiler": "^2.6.11"
   },
@@ -42,7 +45,7 @@
   },
   "scripts": {
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint && prettier --list-different '**/*.{json,css,md}'",
+    "lint": "vue-cli-service lint --no-fix && prettier --list-different '**/*.{json,md}'",
     "serve": "vue-cli-service serve",
     "test": "ava"
   },
@@ -72,6 +75,8 @@
     "parserOptions": {
       "parser": "babel-eslint"
     },
-    "rules": {}
+    "rules": {
+      "prettier/prettier": "error"
+    }
   }
 }

@@ -7600,6 +7600,14 @@ raw-body@2.4.0:
     iconv-lite "0.4.24"
     unpipe "1.0.0"
 
+raw-loader@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/raw-loader/-/raw-loader-4.0.0.tgz#d639c40fb9d72b5c7f8abc1fb2ddb25b29d3d540"
+  integrity sha512-iINUOYvl1cGEmfoaLjnZXt4bKfT2LJnZZib5N/LLyAphC+Dd11vNP9CNVb38j+SAJpFI1uo8j9frmih53ASy7Q==
+  dependencies:
+    loader-utils "^1.2.3"
+    schema-utils "^2.5.0"
+
 rc@^1.2.7, rc@^1.2.8:
   version "1.2.8"
   resolved "https://registry.yarnpkg.com/rc/-/rc-1.2.8.tgz#cd924bf5200a075b83c188cd6b9e211b7fc0d3ed"
@@ -9067,6 +9075,16 @@ typedarray@^0.0.6:
   version "0.0.6"
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
   integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
+
+typeface-nothing-you-could-do@^0.0.72:
+  version "0.0.72"
+  resolved "https://registry.yarnpkg.com/typeface-nothing-you-could-do/-/typeface-nothing-you-could-do-0.0.72.tgz#5ab8d3a833e3708c134cd0f7c59965de144404c3"
+  integrity sha512-cAWt+WgG4QzSLlgq4Z5ppmkHU9AZ59qhs/TsUbWaRypKTJPWPgZ2wkNVRAnRz7+0Q1s8tEpmGNeqQsu4bV5hTw==
+
+typeface-share-tech-mono@^0.0.72:
+  version "0.0.72"
+  resolved "https://registry.yarnpkg.com/typeface-share-tech-mono/-/typeface-share-tech-mono-0.0.72.tgz#b3996dd774b1866f2bc94c82f098885d84842ef1"
+  integrity sha512-O1cMFKOLoR3M4q+urjkNGrxiYiPsUAYuKjLpt7OxxLNnEZnpR0xk7c0MB//19zhWv9nRCWVtzHo1sHPY2xEIdQ==
 
 uglify-js@3.4.x:
   version "3.4.10"

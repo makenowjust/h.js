@@ -1,7 +1,12 @@
-import Vue from 'vue'
+import "typeface-nothing-you-could-do";
+import "typeface-share-tech-mono";
 
-Vue.config.productionTip = false
+import Vue from "vue";
+
+import App from "./App";
+
+Vue.config.productionTip = false;
 
 new Vue({
-  render: h => h('h1', ['h.js']),
-}).$mount('#app')
+  render: h => h(App)
+}).$mount("#app");
