@@ -1,7 +1,7 @@
 # Node.js
-node_modules/
-*.log
+node_modules
+yarn-debug.log*
+yarn-error.log*
 
-# Nuxt.js
-.nuxt/
-dist/
+# Vue CLI
+/dist

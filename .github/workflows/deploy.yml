@@ -12,7 +12,7 @@ jobs:
       with:
         node-version: '12.x'
     - run: yarn install
-    - run: yarn nuxt generate
+    - run: yarn build
     - uses: peaceiris/actions-gh-pages@v2.5.0
       env:
         ACTIONS_DEPLOY_KEY: ${{ secrets.ACTIONS_DEPLOY_KEY }}
