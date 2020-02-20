@@ -58,8 +58,8 @@ export default {
   text-indent: inherit;
   text-rendering: inherit;
   text-transform: inherit;
-  white-space: pre;
-  word-break: normal;
+  white-space: pre-wrap;
+  word-break: break-all;
   overflow-wrap: break-word;
 }
 
