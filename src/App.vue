@@ -8,6 +8,14 @@
         </div>
         <h1 class="app__title">{{ pkg.name }}</h1>
         <p class="app__subtitle">{{ pkg.description }}</p>
+        <p>
+          <code class="app__install">
+            $ npm install {{ pkg.name }}@{{ pkg.version }}
+          </code>
+          <a class="app__badge" href="https://github.com/MakeNowJust/h.js">
+            GitHub
+          </a>
+        </p>
       </div>
     </div>
   </div>
@@ -206,5 +214,22 @@ span.f {
     transform: translateY(0);
     opacity: 1;
   }
+}
+
+.app__install {
+  padding: 0.5em;
+  margin: 0 0.25em;
+  background: #c4c4c4;
+  color: #2c3e50;
+  font-family: Share Tech Mono, monospace;
+}
+
+.app__badge {
+  padding: 0.5em;
+  margin: 0 0.25em;
+  color: #c4c4c4;
+  background: #111;
+  text-decoration: none;
+  font-family: Share Tech Mono, monospace;
 }
 </style>
