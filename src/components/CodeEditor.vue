@@ -4,7 +4,9 @@
       class="code-editor__editor code-editor__textarea"
       autocomplete="false"
       spellcheck="false"
-      v-model="plainValue"
+      ref="textarea"
+      :value="plainValue"
+      @input="handleInput"
     />
     <pre
       class="code-editor__editor code-editor__highlight"
@@ -28,6 +30,11 @@ export default {
   computed: {
     highlightedValue() {
       return this.highlight(this.plainValue) + "<br>";
+    }
+  },
+  methods: {
+    handleInput() {
+      this.plainValue = this.$refs.textarea.value;
     }
   }
 };
