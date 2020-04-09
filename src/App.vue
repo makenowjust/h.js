@@ -32,13 +32,13 @@ import hSource from "!raw-loader!../h.js";
 export default {
   name: "App",
   components: {
-    CodeEditor
+    CodeEditor,
   },
   data: () => ({
     pkg,
     hSource: hSource.trim(),
-    h
-  })
+    h,
+  }),
 };
 </script>
 
