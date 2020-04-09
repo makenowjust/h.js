@@ -20,23 +20,23 @@ export default {
   name: "CodeEditor",
   props: {
     value: String,
-    highlight: Function
+    highlight: Function,
   },
   data() {
     return {
-      plainValue: this.value
+      plainValue: this.value,
     };
   },
   computed: {
     highlightedValue() {
       return this.highlight(this.plainValue) + "<br>";
-    }
+    },
   },
   methods: {
     handleInput() {
       this.plainValue = this.$refs.textarea.value;
-    }
-  }
+    },
+  },
 };
 </script>
 
