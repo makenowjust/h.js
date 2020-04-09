@@ -12,7 +12,6 @@
     "@vue/cli-service": "4.3.1",
     "ava": "3.6.0",
     "babel-eslint": "10.1.0",
-    "bulma": "0.8.0",
     "eslint": "6.8.0",
     "eslint-config-prettier": "6.10.1",
     "eslint-plugin-prettier": "3.1.2",
