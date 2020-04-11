@@ -20,7 +20,7 @@
     "highlight.js": "9.18.1",
     "prettier": "2.0.4",
     "raw-loader": "4.0.0",
-    "rollup": "2.4.0",
+    "rollup": "2.6.0",
     "typeface-nothing-you-could-do": "0.0.72",
     "typeface-share-tech-mono": "0.0.72",
     "vue": "2.6.11",
