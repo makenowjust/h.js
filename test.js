@@ -387,6 +387,7 @@ test("no warning on rollup", async (t) => {
     onwarn: (warning) => t.fail(`warning ${inspect(warning)}`),
   });
   await bundle.generate({
+    exports: "auto",
     format: "cjs",
   });
 });
