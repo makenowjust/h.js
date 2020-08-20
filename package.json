@@ -23,7 +23,7 @@
     "typeface-nothing-you-could-do": "0.0.72",
     "typeface-share-tech-mono": "0.0.72",
     "vue": "2.6.11",
-    "vue-template-compiler": "2.6.11"
+    "vue-template-compiler": "2.6.12"
   },
   "files": [
     "h.js",
