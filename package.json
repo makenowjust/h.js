@@ -12,7 +12,7 @@
     "@vue/cli-service": "4.5.4",
     "ava": "3.12.1",
     "babel-eslint": "10.1.0",
-    "eslint": "7.7.0",
+    "eslint": "7.8.0",
     "eslint-config-prettier": "6.11.0",
     "eslint-plugin-prettier": "3.1.4",
     "eslint-plugin-vue": "6.2.2",
