@@ -9238,15 +9238,15 @@ typedarray@^0.0.6:
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
   integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
 
-typeface-nothing-you-could-do@0.0.72:
-  version "0.0.72"
-  resolved "https://registry.yarnpkg.com/typeface-nothing-you-could-do/-/typeface-nothing-you-could-do-0.0.72.tgz#5ab8d3a833e3708c134cd0f7c59965de144404c3"
-  integrity sha512-cAWt+WgG4QzSLlgq4Z5ppmkHU9AZ59qhs/TsUbWaRypKTJPWPgZ2wkNVRAnRz7+0Q1s8tEpmGNeqQsu4bV5hTw==
+typeface-nothing-you-could-do@1.1.13:
+  version "1.1.13"
+  resolved "https://registry.yarnpkg.com/typeface-nothing-you-could-do/-/typeface-nothing-you-could-do-1.1.13.tgz#b5d1b549faf477d553d9b6d3cd06a97d052ec9e3"
+  integrity sha512-l3IP+EctFHRJ2+O/8HwzwpJct+Z2HnsbI9uHih1C3rz1oL+2FLaNYFzstdtGhBRWnlEYoD6RLQuRCL5tkarmhA==
 
-typeface-share-tech-mono@0.0.72:
-  version "0.0.72"
-  resolved "https://registry.yarnpkg.com/typeface-share-tech-mono/-/typeface-share-tech-mono-0.0.72.tgz#b3996dd774b1866f2bc94c82f098885d84842ef1"
-  integrity sha512-O1cMFKOLoR3M4q+urjkNGrxiYiPsUAYuKjLpt7OxxLNnEZnpR0xk7c0MB//19zhWv9nRCWVtzHo1sHPY2xEIdQ==
+typeface-share-tech-mono@1.1.13:
+  version "1.1.13"
+  resolved "https://registry.yarnpkg.com/typeface-share-tech-mono/-/typeface-share-tech-mono-1.1.13.tgz#9e10dda13139481517d376142115fc85dc594808"
+  integrity sha512-GJy3sssRXxYbL7+ZRT8jSaTyHEs5zMEfa7PNA0GPUqcGjqaCTQWekcxrH1E7ncaiLrKmkD732cbx2syG1HDSfg==
 
 uglify-js@3.4.x:
   version "3.4.10"
