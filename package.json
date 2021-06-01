@@ -22,8 +22,8 @@
     "rollup": "2.50.5",
     "typeface-nothing-you-could-do": "1.1.13",
     "typeface-share-tech-mono": "1.1.13",
-    "vue": "2.6.12",
-    "vue-template-compiler": "2.6.12"
+    "vue": "2.6.13",
+    "vue-template-compiler": "2.6.13"
   },
   "files": [
     "h.js",
