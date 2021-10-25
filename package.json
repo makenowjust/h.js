@@ -19,7 +19,7 @@
     "esm": "3.2.25",
     "prettier": "2.4.1",
     "raw-loader": "4.0.2",
-    "rollup": "2.57.0",
+    "rollup": "2.58.1",
     "typeface-nothing-you-could-do": "1.1.13",
     "typeface-share-tech-mono": "1.1.13",
     "vue": "2.6.14",
