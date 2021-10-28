@@ -7,9 +7,9 @@
     "url": "https://github.com/makenowjust/h.js/issues"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "4.5.14",
-    "@vue/cli-plugin-eslint": "4.5.14",
-    "@vue/cli-service": "4.5.14",
+    "@vue/cli-plugin-babel": "4.5.15",
+    "@vue/cli-plugin-eslint": "4.5.15",
+    "@vue/cli-service": "4.5.15",
     "ava": "3.15.0",
     "babel-eslint": "10.1.0",
     "eslint": "7.32.0",
