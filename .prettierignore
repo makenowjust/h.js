@@ -1,3 +1,4 @@
 h.js
-.nuxt/
-dist/
+h.mjs
+.next/
+out/

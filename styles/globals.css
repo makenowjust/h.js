@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.highlight .c {
+  @apply italic;
+  @apply text-gray-400;
+}
+
+.highlight .d {
+  @apply text-orange-500;
+}
+
+.highlight .k {
+  @apply text-red-500;
+}
+
+.highlight .v {
+  @apply text-blue-300;
+}
+
+.highlight .s {
+  @apply text-blue-400;
+}
+
+.highlight .i {
+  @apply text-slate-700;
+}
+
+.highlight .r {
+  @apply text-blue-500;
+}
+
+.highlight .o {
+  @apply text-emerald-400;
+}
+
+.highlight .p {
+  @apply text-emerald-400;
+}
+
+.highlight .f {
+  @apply text-slate-700;
+  @apply font-bold;
+}

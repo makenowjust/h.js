@@ -10,11 +10,12 @@ jobs:
     - uses: actions/checkout@master
     - uses: actions/setup-node@v3
       with:
-        node-version: '12.x'
+        node-version: 17.x
+        cache: yarn
     - run: yarn install
     - run: yarn build
     - uses: peaceiris/actions-gh-pages@v3.8.0
       env:
         ACTIONS_DEPLOY_KEY: ${{ secrets.ACTIONS_DEPLOY_KEY }}
         PUBLISH_BRANCH: gh-pages
-        PUBLISH_DIR: ./dist
+        PUBLISH_DIR: ./out
