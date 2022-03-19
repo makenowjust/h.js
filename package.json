@@ -27,7 +27,8 @@
   },
   "files": [
     "h.js",
-    "h.mjs"
+    "h.mjs",
+    "index.d.ts"
   ],
   "homepage": "https://h.js.org/",
   "keywords": [
@@ -35,12 +36,14 @@
     "syntax"
   ],
   "license": "MIT",
+  "type": "commonjs",
   "main": "./h.js",
   "module": "./h.mjs",
+  "types": "./index.d.ts",
   "exports": {
     ".": {
       "import": "./h.mjs",
-      "require": "./h.js"
+      "default": "./h.js"
     },
     "./package.json": "./package.json"
   },
