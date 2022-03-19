@@ -10,13 +10,12 @@
     "@vue/cli-plugin-babel": "5.0.3",
     "@vue/cli-plugin-eslint": "5.0.3",
     "@vue/cli-service": "5.0.3",
-    "ava": "3.15.0",
+    "ava": "4.1.0",
     "babel-eslint": "10.1.0",
     "eslint": "7.32.0",
     "eslint-config-prettier": "6.15.0",
     "eslint-plugin-prettier": "4.0.0",
     "eslint-plugin-vue": "8.5.0",
-    "esm": "3.2.25",
     "prettier": "2.6.0",
     "raw-loader": "4.0.2",
     "rollup": "2.70.1",
@@ -46,11 +45,6 @@
     "lint": "vue-cli-service lint --no-fix && prettier --list-different '**/*.{json,md}'",
     "serve": "vue-cli-service serve",
     "test": "ava"
-  },
-  "ava": {
-    "require": [
-      "esm"
-    ]
   },
   "browserslist": [
     "> 1%",
