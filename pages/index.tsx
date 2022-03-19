@@ -32,7 +32,7 @@ const Home: NextPage<Props> = ({ code }) => {
           <div className="md:w-[46em]">
             <div className="text-center text-white">
               <div
-                className="overflow-auto relative px-4 pt-9 pb-4 m-auto mb-6 w-[84vw] font-code text-[1.8vw] leading-[1.5em] text-slate-700 bg-slate-100 rounded-md md:w-[46em] md:text-sm animate-slide-in-1 opacity-0"
+                className="overflow-auto relative px-4 pt-9 pb-4 m-auto mb-6 w-[84vw] font-code text-[1.8vw] leading-[1.5em] text-slate-700 bg-slate-100 rounded-md opacity-0 animate-slide-in-1 md:w-[46em] md:text-sm"
                 style={{
                   tabSize: "4ch",
                   fontVariantLigatures: "none",
@@ -44,13 +44,13 @@ const Home: NextPage<Props> = ({ code }) => {
                 </span>
                 <CodeEditor code={code} />
               </div>
-              <h1 className="mb-6 font-script text-4xl animate-slide-in-2 opacity-0">
+              <h1 className="mb-6 font-script text-4xl opacity-0 animate-slide-in-2">
                 {pkg.name}
               </h1>
-              <p className="mb-6 font-script text-xl animate-slide-in-3 opacity-0">
+              <p className="mb-6 font-script text-xl opacity-0 animate-slide-in-3">
                 {pkg.description}
               </p>
-              <p className="animate-slide-in-4 opacity-0">
+              <p className="opacity-0 animate-slide-in-4">
                 <code className="py-2 px-3 font-console text-slate-700 bg-slate-200">
                   $ npm install {pkg.name}@{pkg.version}
                 </code>
