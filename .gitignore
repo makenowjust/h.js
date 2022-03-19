@@ -1,7 +1,5 @@
-# Node.js
-node_modules
+.next/
+node_modules/
+out/
 yarn-debug.log*
 yarn-error.log*
-
-# Vue CLI
-/dist
