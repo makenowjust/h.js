@@ -49,6 +49,10 @@ test("document comment", (t) => {
   [
     ["// @test", "<span class=c>// <span class=d>@test</span></span>"],
     ["/* @test */", "<span class=c>/* <span class=d>@test</span> */</span>"],
+    [
+      "/* @test-test */",
+      "<span class=c>/* <span class=d>@test-test</span> */</span>",
+    ],
   ].forEach(([source, expected]) => {
     highlight(t, source, expected);
   });
