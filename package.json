@@ -35,8 +35,15 @@
     "syntax"
   ],
   "license": "MIT",
-  "main": "h.js",
-  "module": "h.mjs",
+  "main": "./h.js",
+  "module": "./h.mjs",
+  "exports": {
+    ".": {
+      "import": "./h.mjs",
+      "require": "./h.js"
+    },
+    "./package.json": "./package.json"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/makenowjust/h.js.git"

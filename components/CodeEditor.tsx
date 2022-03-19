@@ -1,6 +1,6 @@
 import { ChangeEvent, useCallback, useMemo, useState } from "react";
 
-import h from "../../h.js";
+import h from "h.js";
 
 export default function CodeEditor({ code: defaultCode }: { code: string }) {
   const [code, setCode] = useState<string>(defaultCode);
