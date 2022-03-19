@@ -21,7 +21,11 @@ export default function CodeEditor({ code: defaultCode }: { code: string }) {
         autoComplete="off"
         data-gramm="false"
         className="block overflow-hidden absolute top-0 left-0 p-0 m-0 w-full h-full font-code antialiased font-normal leading-[1.5em] whitespace-pre-wrap break-all bg-transparent border-0 outline-none resize-none"
-        style={{ WebkitTextFillColor: "transparent" }}
+        style={{
+          WebkitTextFillColor: "transparent",
+          fontVariantLigatures: "none",
+          WebkitFontVariantLigatures: "none",
+        }}
         onChange={change}
         value={code}
       ></textarea>

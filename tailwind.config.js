@@ -6,7 +6,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        code: ['"Space Mono"', "monospace"],
+        code: ['"Nanum Gothic Coding"', "monospace"],
         console: ['"Share Tech Mono"', "monospace"],
         script: ['"Nothing You Could Do"', "cursive"],
       },

@@ -32,7 +32,7 @@ const Home: NextPage<Props> = ({ code }) => {
           <div className="md:w-[46em]">
             <div className="text-center text-white">
               <div
-                className="overflow-auto relative px-4 pt-9 pb-4 m-auto mb-6 w-[84vw] font-code text-[1.8vw] leading-[1.5em] text-slate-700 bg-slate-100 rounded-md opacity-0 animate-slide-in-1 md:w-[46em] md:text-sm"
+                className="overflow-auto relative px-4 pt-9 pb-4 m-auto mb-6 w-[80vw] font-code text-[2vw] leading-[1.5em] text-slate-700 bg-slate-100 rounded-md opacity-0 animate-slide-in-1 md:w-[38em] md:text-sm"
                 style={{
                   tabSize: "4ch",
                   fontVariantLigatures: "none",
