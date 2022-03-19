@@ -27,7 +27,8 @@
   },
   "files": [
     "h.js",
-    "h.mjs"
+    "h.mjs",
+    "index.d.ts"
   ],
   "homepage": "https://h.js.org/",
   "keywords": [
@@ -35,8 +36,17 @@
     "syntax"
   ],
   "license": "MIT",
-  "main": "h.js",
-  "module": "h.mjs",
+  "type": "commonjs",
+  "main": "./h.js",
+  "module": "./h.mjs",
+  "types": "./index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./h.mjs",
+      "default": "./h.js"
+    },
+    "./package.json": "./package.json"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/makenowjust/h.js.git"

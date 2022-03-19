@@ -4,7 +4,7 @@ import { promises as fs } from "fs";
 import { join } from "path";
 
 import CodeEditor from "../components/CodeEditor";
-import pkg from "../package.json";
+import pkg from "h.js/package.json";
 
 export async function getStaticProps() {
   const code = (
