@@ -56,7 +56,7 @@ const Home: NextPage<Props> = ({ code }) => {
                 </code>
                 <a
                   className="py-2 px-3 font-console bg-slate-900"
-                  href={pkg.repository.url.replace(/git(?:\+|$)/g, "")}
+                  href={pkg.repository.url.replace(/^git\+|\.git$)/g, "")}
                 >
                   GitHub
                 </a>
