@@ -15,7 +15,6 @@ jobs:
     - run: yarn install
     - run: yarn build
     - uses: peaceiris/actions-gh-pages@v3.8.0
-      env:
-        ACTIONS_DEPLOY_KEY: ${{ secrets.ACTIONS_DEPLOY_KEY }}
-        PUBLISH_BRANCH: gh-pages
-        PUBLISH_DIR: ./out
+      with:
+        github-token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./out
