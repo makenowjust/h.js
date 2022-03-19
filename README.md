@@ -8,14 +8,11 @@
 
 ## Features
 
-- It is small. The size is only 2.0KB or 1.4KB if gzipped.
-- It needs no other libraries.
-- It supports [ES2019][] syntax.
-- Also, it supports some proposals syntax ([`?.`][optional chaining] and [`??`][nullish coalescing]).
+- Small. The size is only 2.0KB or 1.4KB if gzipped.
+- Dependency free. It needs no other libraries.
+- It supports [ES2020][] syntax.
 
-[es2019]: http://www.ecma-international.org/ecma-262/10.0/
-[optional chaining]: https://github.com/tc39/proposal-optional-chaining
-[nullish coalescing]: https://github.com/tc39/proposal-nullish-coalescing
+[es2021]: https://www.ecma-international.org/publications-and-standards/standards/ecma-262/
 
 ## Install
 
@@ -69,4 +66,4 @@ It returns an HTML string which contains some `<span>` elements having such clas
 
 [MIT](https://makenowjust.mit-license.org/2015-2020) and [🍣](https://github.com/MakeNowJust/sushi-ware)
 
-(C) 2015-2020 TSUYUSATO "[MakeNowJust](https://github.com/MakeNowJust)" Kitsune
+(C) 2015-2022 TSUYUSATO "[MakeNowJust](https://github.com/MakeNowJust)" Kitsune

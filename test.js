@@ -249,7 +249,7 @@ test("template literal", (t) => {
 test("regexp", (t) => {
   [
     "/regexp/",
-    "/regexp/imguys",
+    "/regexp/dimguys",
     "/regular expression/",
     "/\\//",
     "/[/]/",
@@ -268,7 +268,7 @@ test("regexp", (t) => {
       }
     );
 
-    w`+ - * ** / % = ~ ^ & | && || ?? > < << >> >>> ! += -= *= **= /= %= == === != !== ^= &= |= >= <= <<= >>= >>>=`.forEach(
+    w`+ - * ** / % = ~ ^ & | && || ?? > < << >> >>> ! += -= *= **= /= %= == === != !== ^= &= |= >= <= <<= >>= >>>= ||= &&= ??=`.forEach(
       (operator) => {
         highlight(
           t,
