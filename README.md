@@ -10,7 +10,7 @@
 
 - Small. The size is only 2.0KB or 1.4KB if gzipped.
 - Dependency free. It needs no other libraries.
-- It supports [ES2020][] syntax.
+- It supports [ES2021][] syntax.
 
 [es2021]: https://www.ecma-international.org/publications-and-standards/standards/ecma-262/
 
