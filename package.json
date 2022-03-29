@@ -19,8 +19,8 @@
     "next": "12.1.2",
     "postcss": "8.4.12",
     "prettier": "2.6.1",
-    "react": "17.0.2",
-    "react-dom": "17.0.2",
+    "react": "18.0.0",
+    "react-dom": "18.0.0",
     "rollup": "2.70.1",
     "tailwindcss": "3.0.23",
     "typescript": "4.6.3"
