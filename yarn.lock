@@ -737,15 +737,15 @@ currently-unhandled@^0.4.1:
   dependencies:
     array-find-index "^1.0.1"
 
-daisyui@2.17.0:
-  version "2.17.0"
-  resolved "https://registry.yarnpkg.com/daisyui/-/daisyui-2.17.0.tgz#4a1016cf5e0d32ee4dec1139f600b06bfd185ceb"
-  integrity sha512-U8eA8IvwH0JSi72WbRZdmJcYZek3ERMPFPAVFhnYc6dGnobeIHLGBz8J4q012I9YVDUqXFrWz13rpn+SBdn7qQ==
+daisyui@2.47.0:
+  version "2.47.0"
+  resolved "https://registry.yarnpkg.com/daisyui/-/daisyui-2.47.0.tgz#f3a8dad0838fc5cbd125910694fa2de0d34441bd"
+  integrity sha512-svZpXKldtHjXTEdj/lu2n7b+EQJSatqvmVB59k4dhCDOYUhUZ3jtGuPrgOJlPysHhDjxjCRWWug/fgV5e8tc/w==
   dependencies:
     color "^4.2"
     css-selector-tokenizer "^0.8.0"
     postcss-js "^4.0.0"
-    tailwindcss "^3.0"
+    tailwindcss "^3"
 
 damerau-levenshtein@^1.0.8:
   version "1.0.8"
@@ -2727,7 +2727,7 @@ tailwindcss@3.1.4:
     quick-lru "^5.1.1"
     resolve "^1.22.0"
 
-tailwindcss@^3.0, tailwindcss@^3.2.2:
+tailwindcss@^3, tailwindcss@^3.2.2:
   version "3.2.4"
   resolved "https://registry.yarnpkg.com/tailwindcss/-/tailwindcss-3.2.4.tgz#afe3477e7a19f3ceafb48e4b083e292ce0dc0250"
   integrity sha512-AhwtHCKMtR71JgeYDaswmZXhPcW9iuI9Sp2LvZPo9upDZ7231ZJ7eA9RaURbhpXGVlrjX4cFNlB4ieTetEb7hQ==
