@@ -33,6 +33,7 @@ test("comment", (t) => {
       */`,
     "/*",
     "/* *",
+    "#!foo",
   ].forEach((source) => {
     highlight(t, source, `<span class=c>${he(source)}</span>`);
   });
@@ -328,6 +329,17 @@ test("function name", (t) => {
     ["f`", "<span class=f>f</span><span class=s>`</span>"],
     ["f `", "<span class=f>f</span> <span class=s>`</span>"],
     ["f\n`", "<span class=f>f</span>\n<span class=s>`</span>"],
+  ].forEach(([source, expected]) => {
+    highlight(t, source, expected);
+  });
+});
+
+test("private field", (t) => {
+  [
+    ["#f", "<span class=f>#f</span>"],
+    ["#foo", "<span class=f>#foo</span>"],
+    ["#foo(", "<span class=f>#foo</span><span class=p>(</span>"],
+    ["#foo`", "<span class=f>#foo</span><span class=s>`</span>"],
   ].forEach(([source, expected]) => {
     highlight(t, source, expected);
   });
