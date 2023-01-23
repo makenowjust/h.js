@@ -20,12 +20,11 @@ type Props = {
 };
 
 const Home: NextPage<Props> = ({ code }) => {
+  const title = `${pkg.name} - ${pkg.description}`;
   return (
     <>
       <Head>
-        <title>
-          {pkg.name} - {pkg.description}
-        </title>
+        <title>{title}</title>
       </Head>
       <div className="min-h-screen bg-stone-700 hero">
         <div className="md:w-[46em] hero-content">
