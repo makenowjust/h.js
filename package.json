@@ -7,7 +7,7 @@
     "url": "https://github.com/makenowjust/h.js/issues"
   },
   "devDependencies": {
-    "@types/node": "18.14.2",
+    "@types/node": "18.14.4",
     "@types/react": "18.0.28",
     "autoprefixer": "10.4.13",
     "ava": "5.2.0",
