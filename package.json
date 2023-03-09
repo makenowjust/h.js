@@ -9,7 +9,7 @@
   "devDependencies": {
     "@types/node": "18.14.6",
     "@types/react": "18.0.28",
-    "autoprefixer": "10.4.13",
+    "autoprefixer": "10.4.14",
     "ava": "5.2.0",
     "daisyui": "2.51.3",
     "eslint": "8.35.0",
