@@ -12,7 +12,7 @@
     "autoprefixer": "10.4.14",
     "ava": "5.2.0",
     "daisyui": "2.51.6",
-    "eslint": "8.40.0",
+    "eslint": "8.41.0",
     "eslint-config-next": "13.4.3",
     "eslint-config-prettier": "8.8.0",
     "eslint-plugin-tailwindcss": "3.12.0",
