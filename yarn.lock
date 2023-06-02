@@ -794,10 +794,10 @@ currently-unhandled@^0.4.1:
   dependencies:
     array-find-index "^1.0.1"
 
-daisyui@3.0.0:
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/daisyui/-/daisyui-3.0.0.tgz#95ae7ca039e9b2e520b6182e878060d2adddd6be"
-  integrity sha512-EuNK9JQd5yrPLDynAPQkG/29vjZXFWhBK4HXvM83d9oJU0EmF35UNLLs0cslBFfLK4b+bOuhgoYPJ4BjytOxNQ==
+daisyui@3.0.1:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/daisyui/-/daisyui-3.0.1.tgz#6ec0b210403b00cd595b5dd9219e83a95e70f185"
+  integrity sha512-UJQ90ffDRgIEsDYdYpsFuEwc1fDXejm64oK2JFNNgmUyxbOgYveM1EphCLhxPj85nNGybBoHWx87Kua+24iT8w==
   dependencies:
     colord "^2.9"
     css-selector-tokenizer "^0.8"
