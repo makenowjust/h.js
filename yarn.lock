@@ -844,10 +844,10 @@ currently-unhandled@^0.4.1:
   dependencies:
     array-find-index "^1.0.1"
 
-daisyui@3.7.7:
-  version "3.7.7"
-  resolved "https://registry.yarnpkg.com/daisyui/-/daisyui-3.7.7.tgz#b1aaa8f6bd469e73e4a28392cd29800452bc84ab"
-  integrity sha512-2/nFdW/6R9MMnR8tTm07jPVyPaZwpUSkVsFAADb7Oq8N2Ynbls57laDdNqxTCUmn0QvcZi01TKl8zQbAwRfw1w==
+daisyui@3.8.0:
+  version "3.8.0"
+  resolved "https://registry.yarnpkg.com/daisyui/-/daisyui-3.8.0.tgz#e61f77bb52a2d7f45e3bf2d9f6b0897144caa9d1"
+  integrity sha512-VsWD//XlHkOBFSiRNTOZTxTJ/W8xI65erowErfbDWrPTkMYqf0ee/FTaqn4rquZoCcumENdFegAL8eELMnztxQ==
   dependencies:
     colord "^2.9"
     css-selector-tokenizer "^0.8"
