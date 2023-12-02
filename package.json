@@ -8,7 +8,7 @@
   },
   "devDependencies": {
     "@types/node": "20.10.2",
-    "@types/react": "18.2.40",
+    "@types/react": "18.2.41",
     "autoprefixer": "10.4.16",
     "ava": "5.3.1",
     "daisyui": "4.4.17",
