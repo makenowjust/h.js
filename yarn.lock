@@ -892,10 +892,10 @@ currently-unhandled@^0.4.1:
   dependencies:
     array-find-index "^1.0.1"
 
-daisyui@4.4.17:
-  version "4.4.17"
-  resolved "https://registry.yarnpkg.com/daisyui/-/daisyui-4.4.17.tgz#60d21e62e02388efdb9789e486deb69e65f7b6e5"
-  integrity sha512-vcxLKoWiqPjEtcBkSayi9sDW1kWgWRdy1GjSu3zNtMiCsXwqDpCzNkdijuY9RuJ/2tBCtnwxhBv72Yizfi7KAQ==
+daisyui@4.4.18:
+  version "4.4.18"
+  resolved "https://registry.yarnpkg.com/daisyui/-/daisyui-4.4.18.tgz#99b20694cfb570118870cbd0e52073a8b6528734"
+  integrity sha512-7e9gHo8swozeYMrXR10Mjo0QoBt7rAhKZZ1gQKiu+FxuSW8tinSV//O/rMQAw3liVBxkxWNYD/g2vrNQ8h/ThQ==
   dependencies:
     css-selector-tokenizer "^0.8"
     culori "^3"
