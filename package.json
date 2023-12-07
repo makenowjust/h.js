@@ -23,7 +23,7 @@
     "react-dom": "18.2.0",
     "rollup": "4.6.1",
     "tailwindcss": "3.3.6",
-    "typescript": "5.3.2"
+    "typescript": "5.3.3"
   },
   "files": [
     "h.js",
