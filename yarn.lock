@@ -1064,10 +1064,10 @@ currently-unhandled@^0.4.1:
   dependencies:
     array-find-index "^1.0.1"
 
-daisyui@4.12.11:
-  version "4.12.11"
-  resolved "https://registry.yarnpkg.com/daisyui/-/daisyui-4.12.11.tgz#97fb34be18a355b88beb6c49088f306a2d851f2b"
-  integrity sha512-D9OJTlnU1ATiDsKkw5/TB0997Hm73zu9SFeUTthDtKd06OEJQlOLoYrGXlP2YhHZDW4VAcQnmhEphTgPFUYqSw==
+daisyui@4.12.12:
+  version "4.12.12"
+  resolved "https://registry.yarnpkg.com/daisyui/-/daisyui-4.12.12.tgz#32d492e7992861433a7de835c2538ae5afcdb448"
+  integrity sha512-xmCZ4piuWOjhNyB0VDKczB5vKFCipTA7UxaZNOzCz6cT8kvWgv5BDtUo+Hk9gOFufByOlfuBdzLpfhY5GsebTQ==
   dependencies:
     css-selector-tokenizer "^0.8"
     culori "^3"
