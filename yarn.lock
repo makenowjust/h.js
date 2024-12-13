@@ -1318,10 +1318,10 @@ currently-unhandled@^0.4.1:
   dependencies:
     array-find-index "^1.0.1"
 
-daisyui@4.12.21:
-  version "4.12.21"
-  resolved "https://registry.yarnpkg.com/daisyui/-/daisyui-4.12.21.tgz#da80918063650b7a64908d8769b6b60824fe9ee7"
-  integrity sha512-dKfJoGTf5b7D75pVYdNcbhBQd73IOUh9wuXeWHm0qXus4FYvFJJpS9/EX41hAyhojE6s09/ow6wGgPGERzD5wg==
+daisyui@4.12.22:
+  version "4.12.22"
+  resolved "https://registry.yarnpkg.com/daisyui/-/daisyui-4.12.22.tgz#e578a0e8c3fc5fea90a55547f112ba507bfabfbe"
+  integrity sha512-HDLWbmTnXxhE1MrMgSWjVgdRt+bVYHvfNbW3GTsyIokRSqTHonUTrxV3RhpPDjGIWaHt+ELtDCTYCtUFgL2/Nw==
   dependencies:
     css-selector-tokenizer "^0.8"
     culori "^3"
