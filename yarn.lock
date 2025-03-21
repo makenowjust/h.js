@@ -1322,10 +1322,10 @@ currently-unhandled@^0.4.1:
   dependencies:
     array-find-index "^1.0.1"
 
-daisyui@5.0.6:
-  version "5.0.6"
-  resolved "https://registry.yarnpkg.com/daisyui/-/daisyui-5.0.6.tgz#c07e81e0367f83d375dddc22219014ab25499f87"
-  integrity sha512-/e/9Gw/2y9oawBJlWkJMSEhRXdmfOLvcPl+6q/x2rPEdIVOtebs1t3ex2vwySl9vCRs1GGNBKCiL+P60Ps/wUw==
+daisyui@5.0.9:
+  version "5.0.9"
+  resolved "https://registry.yarnpkg.com/daisyui/-/daisyui-5.0.9.tgz#d1e549732fcfad258cf8692b56d0f18f2a6a5c96"
+  integrity sha512-RsaehHh45f+0shWgZZaOY09/8eOae2voRsqJCD71j9yrnYgcke0Nj5ys0ZxrW4SPcc4+q96kWyJu0Z8P1zZdoA==
 
 damerau-levenshtein@^1.0.8:
   version "1.0.8"
