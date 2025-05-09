@@ -14,7 +14,7 @@
     "daisyui": "5.0.35",
     "eslint": "9.26.0",
     "eslint-config-next": "15.3.2",
-    "eslint-config-prettier": "10.1.3",
+    "eslint-config-prettier": "10.1.5",
     "eslint-plugin-tailwindcss": "3.18.0",
     "next": "15.3.2",
     "postcss": "8.5.3",
