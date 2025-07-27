@@ -11,7 +11,7 @@
     "@types/react": "19.1.8",
     "autoprefixer": "10.4.21",
     "ava": "6.4.1",
-    "daisyui": "5.0.47",
+    "daisyui": "5.0.48",
     "eslint": "9.32.0",
     "eslint-config-next": "15.4.4",
     "eslint-config-prettier": "10.1.8",
