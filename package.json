@@ -21,7 +21,7 @@
     "prettier": "2.8.8",
     "react": "19.2.5",
     "react-dom": "19.2.5",
-    "rollup": "4.60.2",
+    "rollup": "4.60.3",
     "tailwindcss": "4.2.4",
     "typescript": "6.0.3"
   },
