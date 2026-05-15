@@ -18,7 +18,7 @@
     "eslint-plugin-tailwindcss": "3.18.3",
     "next": "15.5.18",
     "postcss": "8.5.14",
-    "prettier": "2.8.8",
+    "prettier": "3.8.3",
     "react": "19.2.6",
     "react-dom": "19.2.6",
     "rollup": "4.60.4",
