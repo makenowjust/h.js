@@ -1286,10 +1286,10 @@ currently-unhandled@^0.4.1:
   dependencies:
     array-find-index "^1.0.1"
 
-daisyui@5.6.3:
-  version "5.6.3"
-  resolved "https://registry.yarnpkg.com/daisyui/-/daisyui-5.6.3.tgz#f9d550d7a4c692a59bf468b938d2e822e1665aa4"
-  integrity sha512-QvdtXnQ/tD5a18Y/+NJkJ1+ggwRtMF84GHTHCCAto5SNqYwZj8SUQQviKMpe1cKR7vMo/evTBDExkYd19KloBQ==
+daisyui@5.6.5:
+  version "5.6.5"
+  resolved "https://registry.yarnpkg.com/daisyui/-/daisyui-5.6.5.tgz#c3a155b02f416e6a993210f5f14528bf51d0074d"
+  integrity sha512-pPQf1se8nDymB5uccN0eTFABwpDViYmq4ygN2YNX+/KFZDk9IYKT5Pdn+rkcHkOXowRObCampMjm/ZX1lU5VYg==
 
 damerau-levenshtein@^1.0.8:
   version "1.0.8"
