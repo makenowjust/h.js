@@ -959,10 +959,10 @@ async-sema@^3.1.1:
   resolved "https://registry.yarnpkg.com/async-sema/-/async-sema-3.1.1.tgz#e527c08758a0f8f6f9f15f799a173ff3c40ea808"
   integrity sha512-tLRNUXati5MFePdAk8dw7Qt7DpxPB60ofAgn8WRhW6a2rcimZnYBP9oxHiv0OHy+Wz7kPMG+t4LGdt31+4EmGg==
 
-autoprefixer@10.6.0:
-  version "10.6.0"
-  resolved "https://registry.yarnpkg.com/autoprefixer/-/autoprefixer-10.6.0.tgz#b68112d055f87aff2a2ea58877b510c6847bea27"
-  integrity sha512-A26d6qs9kqGgkmImIXMYvXTzqb4Qv7AVgpY1NXzr9Y659J8qHHnLOO/zE8ewIGFMprOolAoRAQYDgNryXIJKBw==
+autoprefixer@10.6.1:
+  version "10.6.1"
+  resolved "https://registry.yarnpkg.com/autoprefixer/-/autoprefixer-10.6.1.tgz#437cea1a0b96cedc4065c05327b728b1594faf27"
+  integrity sha512-cL1Qz6ADZhcEbny/8HPfe99J6HhNoYtpX2LFLIbhgGE7Q1hlQVkYFdetDN7Id3KiQxhDrHwzlHr/YQCnZ8+xSA==
   dependencies:
     browserslist "^4.28.9"
     caniuse-lite "^1.0.30001810"
