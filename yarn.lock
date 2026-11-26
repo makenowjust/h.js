@@ -980,10 +980,10 @@ autoprefixer@10.7.0:
     picocolors "^1.1.1"
     postcss-value-parser "^4.2.0"
 
-ava@8.4.0:
-  version "8.4.0"
-  resolved "https://registry.yarnpkg.com/ava/-/ava-8.4.0.tgz#c5aa69816f6944746cccafbd2bc0db96ca8d1063"
-  integrity sha512-thHHhRJa6al6+45y9L8ei7u1QYHFKpt5S3jy2A2t/bd9EoJ9wIEJgLuyXuRg5tEnwryqWxLuu4ig+QSPx6yfUA==
+ava@8.5.0:
+  version "8.5.0"
+  resolved "https://registry.yarnpkg.com/ava/-/ava-8.5.0.tgz#b6c984f8c1883511f368938a5b558eeda92f340c"
+  integrity sha512-b3QZLx0R6vziwOZFhXySwu8rt/6UKmhCkjV1m7GlibzG2I1jXbHTZdbtvXUHbIDyPphMuC6AuHGZ6l5++QNklg==
   dependencies:
     "@vercel/nft" "^1.11.0"
     acorn "^8.19.0"
